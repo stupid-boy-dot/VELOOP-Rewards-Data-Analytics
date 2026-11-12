@@ -23,6 +23,7 @@
 - GitHub Pages configured to publish from `main` branch, repository root
 - GitHub Pages build completed successfully (build status: built)
 - Public project showcase URL: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
+- Live URL opened and confirmed working by the user on 2026-11-12
 - Original user-level source workbook intentionally excluded from public GitHub publication because it contains name/email-style columns
 
 ## Hosting note
