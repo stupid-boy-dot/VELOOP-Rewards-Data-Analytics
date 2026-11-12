@@ -16,21 +16,23 @@
 - Prioritised implementation backlog
 - Executive summary and consolidated report
 
-## Repository publication
+## Repository and deployment
 
-- Public GitHub repository created: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
+- Public GitHub repository: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
 - README, assignment scope, evidence policy, progress log, simulated findings, pipeline and logical-model notes published
-- Public project showcase page added at the repository root (index.html)
-- Original user-level source workbook intentionally excluded from public GitHub publication
+- Public project showcase deployed at: https://velop-rewards-data-analytics.ksakiran1206.workers.dev
+- Cloudflare Worker production URL enabled; Preview URL disabled
+- The deployed page is a static documentation showcase, not an interactive analytics dashboard or production VELOOP application
+- Original user-level source workbook intentionally excluded from public GitHub publication because it contains name/email-style columns
 
-## Still to verify / complete
+## Still to complete before final submission
 
-- Mirror the approved PDF, Excel and presentation deliverables into the public repository
-- Deploy the static project showcase so the pre-submission form can receive a publicly accessible URL
-- Confirm the Data Analyst track's expectation for the mandatory live deployment URL; the assignment describes dashboard work as a blueprint, not necessarily a deployed dashboard
-- Complete the official pre-submission form only after repository and URL fields are valid
+- Mirror approved, review-safe PDF, Excel and presentation deliverables into the public repository where appropriate
+- Confirm whether VELOOP expects a deployed artifact for the Data Analyst track, since the assignment describes the dashboard as a blueprint and does not require a production dashboard deployment
+- Complete the mandatory pre-submission form after checking the repository and live URL
 - Await review feedback and respond to any requested changes
+- Make the official final submission only through the channel specified by VELOOP
 
-## Important status note
+## Evidence and status boundary
 
-The static showcase is a documentation/project overview page, not an interactive analytics dashboard or production VELOOP application. The design specifications are prepared, but production instrumentation, backend events, data infrastructure, privacy controls and dashboards have not been verified as implemented.
+The design specifications and a public project overview are prepared. Production instrumentation, backend events, data infrastructure, privacy controls and interactive dashboards have not been verified as implemented. The live URL demonstrates project documentation only.
