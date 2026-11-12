@@ -16,21 +16,21 @@
 - Prioritised implementation backlog
 - Executive summary and consolidated report
 
-## Current review activities
+## Repository publication
 
-- Public GitHub repository created
-- Repository README and project scope documentation published
-- Evidence and simulated-data policy documented
-- Pre-submission checklist and publishing review in progress
+- Public GitHub repository created: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
+- README, assignment scope, evidence policy, progress log, simulated findings, pipeline and logical-model notes published
+- Public project showcase page added at the repository root (index.html)
 - Original user-level source workbook intentionally excluded from public GitHub publication
 
 ## Still to verify / complete
 
-- Add approved, review-safe PDF and Excel deliverables to the public repository
+- Mirror the approved PDF, Excel and presentation deliverables into the public repository
+- Deploy the static project showcase so the pre-submission form can receive a publicly accessible URL
 - Confirm the Data Analyst track's expectation for the mandatory live deployment URL; the assignment describes dashboard work as a blueprint, not necessarily a deployed dashboard
 - Complete the official pre-submission form only after repository and URL fields are valid
 - Await review feedback and respond to any requested changes
 
 ## Important status note
 
-The design specifications are prepared, but production instrumentation, backend events, data infrastructure, privacy controls and dashboards have not been verified as implemented. This log records documentation and review progress only.
+The static showcase is a documentation/project overview page, not an interactive analytics dashboard or production VELOOP application. The design specifications are prepared, but production instrumentation, backend events, data infrastructure, privacy controls and dashboards have not been verified as implemented.
