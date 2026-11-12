@@ -1,0 +1,15 @@
+flowchart TD
+    A[Product clients and backend services] --> B[Authenticated collection endpoint]
+    B --> C[Immutable raw landing]
+    C --> D{Schema and quality validation}
+    D -->|Pass| E[Transformation and conformed models]
+    D -->|Fail| Q[Quarantine with reason and alert]
+    Q --> R[Owner review and controlled replay]
+    R --> C
+    E --> F[Analytical data layer]
+    F --> G[BI dashboards and business reporting]
+    H[Monitoring: freshness, volume, failures, schema drift] -.-> B
+    H -.-> C
+    H -.-> D
+    H -.-> E
+    H -.-> F
