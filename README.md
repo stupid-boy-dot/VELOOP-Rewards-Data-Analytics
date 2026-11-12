@@ -2,7 +2,7 @@
 
 **Internship:** VELOOP Rewards Data Analyst Internship  
 **Assignment:** Task 01 — Product Analytics, Data Readiness & Data Management Blueprint  
-**Project status:** Pre-submission review / documentation in progress
+**Project status:** Pre-submission review / public project showcase deployed
 
 ## Project objective
 
@@ -33,6 +33,12 @@ The assignment explicitly states that supplied Task 01 data is fictional/simulat
 - **To Be Verified:** implementation or product details not evidenced by the supplied material
 
 No production statistics, internal implementation status, failure codes, security mechanisms or company targets are invented.
+
+## Live project showcase
+
+A static project overview page is deployed at: https://velop-rewards-data-analytics.ksakiran1206.workers.dev
+
+This is a documentation showcase, not an interactive analytics dashboard or production VELOOP application.
 
 ## Repository contents
 
