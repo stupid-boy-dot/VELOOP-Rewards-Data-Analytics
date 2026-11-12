@@ -16,23 +16,27 @@
 - Prioritised implementation backlog
 - Executive summary and consolidated report
 
-## Repository and deployment
+## Repository and public showcase
 
 - Public GitHub repository: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
 - README, assignment scope, evidence policy, progress log, simulated findings, pipeline and logical-model notes published
-- Public project showcase deployed at: https://velop-rewards-data-analytics.ksakiran1206.workers.dev
-- Cloudflare Worker production URL enabled; Preview URL disabled
-- The deployed page is a static documentation showcase, not an interactive analytics dashboard or production VELOOP application
+- GitHub Pages configured to publish from `main` branch, repository root
+- GitHub Pages build completed successfully (build status: built)
+- Public project showcase URL: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
 - Original user-level source workbook intentionally excluded from public GitHub publication because it contains name/email-style columns
+
+## Hosting note
+
+A Cloudflare Worker deployment was created and its build succeeded, but the proposed workers.dev hostname returned DNS_PROBE_FINISHED_NXDOMAIN in the user's browser. It is not the active project URL and should not be submitted. GitHub Pages is the alternate static host used for the public showcase.
 
 ## Still to complete before final submission
 
 - Mirror approved, review-safe PDF, Excel and presentation deliverables into the public repository where appropriate
-- Confirm whether VELOOP expects a deployed artifact for the Data Analyst track, since the assignment describes the dashboard as a blueprint and does not require a production dashboard deployment
-- Complete the mandatory pre-submission form after checking the repository and live URL
+- Confirm whether VELOOP expects a deployed artifact for the Data Analyst track, since the assignment describes the dashboard as a blueprint and does not require a production dashboard
+- Complete the mandatory pre-submission form only after checking the repository and live URL
 - Await review feedback and respond to any requested changes
 - Make the official final submission only through the channel specified by VELOOP
 
 ## Evidence and status boundary
 
-The design specifications and a public project overview are prepared. Production instrumentation, backend events, data infrastructure, privacy controls and interactive dashboards have not been verified as implemented. The live URL demonstrates project documentation only.
+The design specifications and a public static project overview are prepared. Production instrumentation, backend events, data infrastructure, privacy controls and interactive dashboards have not been verified as implemented. The live URL demonstrates project documentation only.
