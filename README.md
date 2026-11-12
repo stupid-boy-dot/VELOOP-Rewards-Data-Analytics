@@ -36,7 +36,7 @@ No production statistics, internal implementation status, failure codes, securit
 
 ## Live project showcase
 
-A static project overview page is deployed at: https://velop-rewards-data-analytics.ksakiran1206.workers.dev
+The public static project showcase is published through GitHub Pages: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
 
 This is a documentation showcase, not an interactive analytics dashboard or production VELOOP application.
 
