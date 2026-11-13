@@ -8,6 +8,13 @@
 - Aggregate metric evidence and reproduction script
 - KPI, data dictionary, event tracking and developer handoff schedules
 - Seven-dashboard wireframe viewer and logical model source
+- Direct-link executive summary, consolidated report and product audit in Markdown
+- Public CSV schedules: 84-field data dictionary, 42 KPIs, 35 proposed events, dashboard blueprint, readiness scorecard, gap assessment, product-area mapping, implementation backlog and assumption register
+- Detailed developer handoff in Markdown
+
+## Not hosted as GitHub binary assets yet
+
+The formatted PDFs, XLSX workbooks and PPTX presentation are included in the downloadable public-safe review package, but are not yet individual GitHub repository/release assets. The original row-level source workbook remains excluded for privacy.
 
 ## Retained in the formatted review package
 
