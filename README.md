@@ -27,6 +27,23 @@
 | Proposed implementation | [Analytics implementation playbook](docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md) |
 | Prioritised backlog | [Implementation backlog CSV](deliverables/implementation-backlog.csv) |
 | Assumptions and unknowns | [Assumption register CSV](deliverables/assumption-register.csv) |
+| Product-area mapping | [Product-area mapping CSV](deliverables/product-area-mapping.csv) |
+| Product audit schedule | [Product data audit CSV](deliverables/product-data-audit.csv) |
+| Earning and reward lifecycle | [Earning/reward specification CSV](deliverables/earning-reward-spec.csv) |
+| Wallet and withdrawals | [Wallet/withdrawal specification CSV](deliverables/wallet-withdrawal-spec.csv) |
+| Referral and engagement | [Referral/engagement specification CSV](deliverables/referral-engagement-spec.csv) |
+| Event classification | [Event classification guide CSV](deliverables/event-classification-guide.csv) |
+| Entity catalogue | [Entity model CSV](deliverables/entity-model.csv) |
+| Relationship/cardinality | [Relationship detail CSV](deliverables/relationship-cardinality.csv) |
+| Data quality issues | [Data-quality issue register CSV](deliverables/data-quality-issue-register.csv) |
+| Quality controls | [Quality-control framework CSV](deliverables/quality-control-framework.csv) |
+| Source verification | [Source verification register CSV](deliverables/source-verification-register.csv) |
+| Pipeline architecture | [Pipeline proposal CSV](deliverables/pipeline-proposal.csv) |
+| Privacy and governance | [Privacy/governance schedule CSV](deliverables/privacy-governance.csv) |
+| Third-party integration controls | [Third-party dependency controls CSV](deliverables/third-party-dependency-controls.csv) |
+| Naming and metric conventions | [Standards/conventions CSV](deliverables/standards---conventions.csv) |
+| Design change log | [Change log CSV](deliverables/change-log.csv) |
+| Blueprint read-me | [Blueprint read-me CSV](deliverables/read-me.csv) |
 | Data readiness scorecard | [Readiness scorecard CSV](deliverables/readiness-scorecard.csv) |
 | Product area mapping | [Product-area mapping CSV](deliverables/product-area-mapping.csv) |
 | Gap assessment | [Gap assessment CSV](deliverables/gap-assessment.csv) |
