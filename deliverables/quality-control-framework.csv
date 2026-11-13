@@ -1,0 +1,14 @@
+Layer,Rule,Requirement,Control,Owner,Priority,Status
+Application,Stable IDs,user_id/event_id/transaction_id required at creation,Reject creation without required ID; immutable IDs,Engineering,Critical,Proposed
+Application,Allowed statuses,Status values follow approved state machine,Reject invalid status transitions; log attempted transition,Engineering/Product,High,Proposed
+Application,Amount validation,"Amounts numeric, precision by unit, sign convention explicit","Reject NaN, invalid precision, zero/negative where disallowed",Engineering/Finance,Critical,Proposed
+Collection,Schema validation,Payload matches event_schema_version,"Validate required fields, data types and enums",Data Engineering,High,Proposed
+Collection,Timestamp validation,Event time valid UTC timestamp,Reject malformed timestamps; quarantine future/late values per policy,Data Engineering,High,Proposed
+Raw layer,Duplicate delivery,Same logical event may be delivered more than once,Deduplicate by event_id/idempotency key without suppressing legitimate repeat events,Data Engineering,Critical,Proposed
+Raw layer,Source preservation,Original payload retained for audit/replay,Append-only raw landing with ingestion metadata,Data Engineering,Medium,Proposed
+Transformation,Referential integrity,Fact foreign keys resolve to dimension/entity records,Quarantine orphan references and report counts,Data Engineering,Critical,Proposed
+Transformation,Lifecycle consistency,Task/reward/withdrawal states obey approved transitions,Automated state-transition tests,Data Engineering + Domain Owner,High,Proposed
+Transformation,Unit consistency,Amounts only aggregated within same unit/currency,Separate unit-level metrics; conversions only under approved rates,Data/Finance,Critical,Proposed
+Analytics layer,KPI contract,Metric definition/formula/source/version match KPI catalogue,Automated tests and semantic layer definitions,Data/Analytics,High,Proposed
+Dashboard,Freshness,Dashboard shows last successful refresh and quality status,Freshness indicator; suppress stale KPI or mark stale,BI/Analytics,Medium,Proposed
+Dashboard,Access control,Users only see approved slices/fields,Role-based permissions and export control,Data Governance,High,Proposed

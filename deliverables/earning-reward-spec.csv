@@ -1,0 +1,9 @@
+Lifecycle Stage,Event / Record,Trigger,Required Data,Preferred Source,Control / Interpretation,Status
+Task discovery,task_viewed / task_opened,User views or opens task,"Task ID, user ID, event ID, timestamp, feature",Frontend,Discovery only; does not imply start or completion,Proposed
+Task initiation,task_started,User begins a task attempt,"Task activity ID, task ID, user ID, start timestamp, task type",Backend preferred,Create one attempt ID; idempotent start handling,Proposed
+Task completion,task_completed,Task attempt completes and applicable validation passes,"Task activity ID, task ID, user ID, completed timestamp, status, validation status",Backend,Only count after authoritative validation,Proposed
+Task failure/abandonment,task_failed,"Attempt fails, is abandoned or cannot be tracked","Task activity ID, failure category, timestamp, provider reference if applicable",Backend/provider callback,"Controlled failure taxonomy; distinguish user abandonment, provider failure and system error",Proposed
+Reward pending,reward_pending,Eligible activity creates pending reward,"Reward transaction ID, source activity ID, amount, unit, status",Backend,Pending is not a credited balance,Proposed
+Reward credit,reward_credited,Reward is posted to ledger/balance,"Reward transaction ID, source activity ID, amount, unit, credited timestamp",Backend ledger,Immutable transaction; idempotent posting,Proposed
+Reward reversal/correction,reward_reversed / correction record,Previously posted reward is reversed or adjusted,"New transaction ID, original transaction ID, amount, unit, reason category",Backend ledger,Never overwrite original transaction; preserve lineage,Proposed
+External dependency,provider callback/status,"Ad, survey, offer or game provider returns outcome","Provider ID, opaque provider reference, outcome, received timestamp",Provider integration/backend,Separate provider outcome from VELOOP validation and reward posting,Proposed

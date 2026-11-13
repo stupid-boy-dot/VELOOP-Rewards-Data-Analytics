@@ -1,0 +1,10 @@
+Entity,Primary Key,Key Type,Cardinality to Users,Relationship,Foreign Key / Link,Relationship Notes
+Users,user_id,PK,1,N,Task Activity; Rewards; Wallet Transactions; Withdrawals; Referrals; Feature Events,"One user may have many activity, reward, wallet, withdrawal, referral and event records."
+Task Activity,task_activity_id,PK,N,1,Users.user_id,Each task attempt belongs to one user; a user can have many attempts.
+Rewards,reward_transaction_id,PK,N,1,Users.user_id; Task Activity.task_activity_id (source_activity_id),Reward ledger entry belongs to one user and may reference one source activity.
+Wallet Transactions,transaction_id,PK,N,1,Users.user_id; Rewards.reward_transaction_id (optional reference),Each wallet transaction belongs to one user; a reward credit may map to a wallet transaction.
+Withdrawals,withdrawal_id,PK,N,1,Users.user_id; Wallet Transactions.transaction_id (optional settlement link),Each withdrawal belongs to one user and may settle through one or more ledger references depending on design.
+Referrals,referral_id,PK,N,1,Users.user_id (referrer_user_id and referred_user_id),A referral record links one referrer and one referred user; users can participate in multiple referral records subject to policy.
+Feature Events,event_id,PK,N,1,Users.user_id; session_id; domain entity IDs,Event is a fact record linked to user and optional feature-specific entity.
+Support Tickets,ticket_id,PK,N,1,Users.user_id,A user may create multiple support tickets.
+Help Content,content_id,PK,1,N,Feature Events.content_id,One content item can be viewed by many events.
