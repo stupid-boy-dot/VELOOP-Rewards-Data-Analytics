@@ -1,43 +1,37 @@
-# Current Progress — Pre-submission Review
+# Current Progress — Task 01 Review Revision 2
 
-**Status:** Pre-submission review workspace  
-**Last updated:** 2026-11-12
+**Last updated:** 13 November 2026  
+**Reviewer status:** Initial evaluation 65%; Task 01 not approved. Revision 2 response and public review evidence prepared; final re-review decision pending.
 
-## Completed design work
+## Reviewer requirements addressed
 
-- Product data readiness mapping and analytics gap assessment
-- User/account, earning/reward, wallet/withdrawal and referral/engagement specifications
-- Production event tracking plan and developer handoff
-- Data dictionary, logical data model and KPI catalogue
-- Simulated data profiling and data-quality assessment
-- Proposed data quality controls, dashboard blueprint and pipeline operating model
-- Privacy/access/governance proposal and change-management process
-- Assumption and verification register
-- Prioritised implementation backlog
-- Executive summary and consolidated report
+- Published direct repository links for executive summary, audit, data dictionary, KPI catalogue, event plan, developer handoff, logical model, seven dashboard wireframes and final documentation.
+- Added a seven-screen HTML wireframe viewer and separate design specification covering audience, purpose, panels, decisions and source-readiness caveats for every dashboard.
+- Added calculation evidence with numerators, denominators, formulas, source fields, interpretation constraints and source-by-onboarding breakdowns.
+- Added a Python standard-library reproduction script and run instructions; the script uses local CSV exports and does not transmit source data.
+- Expanded the event tracking plan and developer handoff into reviewable structured schedules with triggers, IDs, properties, validation, deduplication, timestamps and acceptance requirements.
+- Added a practical implementation playbook describing source confirmation, client/server collection, immutable landing, validation/quarantine, curated models, semantic KPIs, ownership and phased release gates.
+- Kept public evidence aggregate-only; original row-level workbooks containing name/email-style fields are excluded.
 
-## Repository and public showcase
+## Main public evidence
 
-- Public GitHub repository: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
-- README, assignment scope, evidence policy, progress log, simulated findings, pipeline and logical-model notes published
-- GitHub Pages configured to publish from `main` branch, repository root
-- GitHub Pages build completed successfully (build status: built)
-- Public project showcase URL: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
-- Live URL opened and confirmed working by the user on 2026-11-12
-- Original user-level source workbook intentionally excluded from public GitHub publication because it contains name/email-style columns
+- Root README with direct links to all public review files
+- Executive summary, readiness audit, data-quality report and consolidated report
+- 84-field data dictionary, 42 KPI entries, 35 event records and 35 developer handoff requirements
+- Seven-dashboard viewer and specifications, plus 39-visual dashboard design report schedule
+- Aggregate calculated metrics, onboarding-by-source breakdown, messy QA counts and reproduction script
+- Logical model SVG/Mermaid, entity and relationship schedules
+- Pipeline, privacy/governance, assumption, gap and implementation backlog schedules
 
-## Hosting note
+## Technical publication notes
 
-A Cloudflare Worker deployment was created and its build succeeded, but the proposed workers.dev hostname returned DNS_PROBE_FINISHED_NXDOMAIN in the user's browser. It is not the active project URL and should not be submitted. GitHub Pages is the alternate static host used for the public showcase.
+- GitHub repository is public; GitHub Pages serves the static project showcase.
+- Live page: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
+- The viewer is a documentation/wireframe artifact, not a production dashboard.
+- The original source workbook and user-level profiling workbook remain excluded from public GitHub because they contain direct identifier-style fields.
 
-## Still to complete before final submission
+## Out of verified scope
 
-- Mirror approved, review-safe PDF, Excel and presentation deliverables into the public repository where appropriate
-- Confirm whether VELOOP expects a deployed artifact for the Data Analyst track, since the assignment describes the dashboard as a blueprint and does not require a production dashboard
-- Complete the mandatory pre-submission form only after checking the repository and live URL
-- Await review feedback and respond to any requested changes
-- Make the official final submission only through the channel specified by VELOOP
+Production instrumentation, source integrations, backend events, ingestion infrastructure, live reward/wallet/withdrawal histories, operational privacy controls and interactive BI deployment have not been verified as implemented. They remain proposed VELOOP implementation work requiring owner approval.
 
-## Evidence and status boundary
-
-The design specifications and a public static project overview are prepared. Production instrumentation, backend events, data infrastructure, privacy controls and interactive dashboards have not been verified as implemented. The live URL demonstrates project documentation only.
+**Next gate:** reviewer independently verifies the published files and responds with approval or further requested changes. No approval or internship completion is claimed.
