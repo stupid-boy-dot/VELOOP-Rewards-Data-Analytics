@@ -15,7 +15,7 @@
 
 ## Existing deliverables retained
 
-The original prepared package still contains the 21-deliverable set, the 7-page dashboard wireframe PDF, the proposed logical ERD, a detailed 37-event tracking plan and developer handoff. The revised package adds the review response, analysis workbook and expanded explanatory material.
+The original prepared package still contains the 21-deliverable set, the 7-page dashboard wireframe PDF, the proposed logical ERD, a detailed 35-event tracking plan and developer handoff. The revised package adds the review response, analysis workbook and expanded explanatory material.
 
 ## Public publication
 
