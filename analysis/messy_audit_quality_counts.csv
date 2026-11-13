@@ -1,0 +1,5 @@
+check_id,check,result,calculation
+QA-001,Messy audit rows,1008,Count rows in Users_Messy_Audit
+QA-002,Unique non-null IDs in messy audit,1000,Distinct non-null user_id values
+QA-003,Excess duplicate rows,8,Rows less unique IDs; duplicates are audit fixture only
+QA-004,IDs appearing more than once,8,Count user_id groups with frequency greater than 1

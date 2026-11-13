@@ -1,0 +1,12 @@
+metric_id,metric,numerator_or_count,denominator,rate_or_result,calculation,source_field_or_range,interpretation_limit
+OBS-001,Clean user rows,1000,1000,1.000000,Count rows in Users_1000_Clean,Users_1000_Clean!A2:AA1001,Record count; no filter
+OBS-002,Unique non-null user IDs,1000,1000,1.000000,Distinct non-null user_id / clean rows,Users_1000_Clean!A2:A1001,Uniqueness check; expected 100%
+OBS-003,Email verification rate,855,1000,0.855000,Verified / all clean user rows,email_verification_status,Snapshot status; not a time-based funnel
+OBS-004,Onboarding completion rate,722,1000,0.722000,Completed / all clean user rows,onboarding_status,Snapshot status; all rows have a status
+OBS-005,Active 7d flag rate,78,1000,0.078000,Yes / all clean user rows,is_active_7d,Supplied flag; qualifying-event logic/as-of date not defined
+OBS-006,Active 30d flag rate,325,1000,0.325000,Yes / all clean user rows,is_active_30d,Supplied flag; not DAU/MAU
+OBS-007,Referral acquisition share,119,1000,0.119000,Referral acquisition / all clean user rows,acquisition_source,Acquisition source only; not referral conversion
+OBS-008,Consent accepted share,923,1000,0.923000,Accepted / all clean user rows,consent_status,Snapshot status
+OBS-009,Marketing opt-in share,442,1000,0.442000,Yes / all clean user rows,marketing_opt_in,Snapshot preference flag
+OBS-010,Null last-login values,72,1000,0.072000,Null last_login_datetime / all clean rows,last_login_datetime,Missing value count
+OBS-011,Negative days-since-registration values,4,1000,0.004000,Count where days_since_registration < 0,days_since_registration,Derived-field boundary/as-of date needs review
