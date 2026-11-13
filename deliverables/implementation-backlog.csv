@@ -1,0 +1,15 @@
+Backlog ID,Requirement,Priority,Reason,Dependency,Owner,Stage,Status
+BKL-001,Define stable user_id contract and event identity rules,Critical,Required for cross-domain joins and deduplication,Identity/authentication,Engineering,Pre-launch foundation,Proposed
+BKL-002,Implement immutable reward and wallet transaction IDs with reversal links,Critical,"Without transaction-level IDs, financial analytics/reconciliation are unreliable",Reward/wallet services,Engineering + Finance,Pre-launch foundation,Proposed
+BKL-003,Implement withdrawal lifecycle timestamps and terminal states,Critical,"Required for queue, outcome and processing-time metrics",Withdrawal service,Engineering + Operations,Pre-launch foundation,Proposed
+BKL-004,Approve canonical event taxonomy and event schema versioning,Critical,"Without consistent events, activity and funnel metrics are inconsistent",Event tracking plan,Product + Engineering + Data,Pre-launch foundation,Proposed
+BKL-005,Publish authoritative data dictionary including platform/country,High,Avoids ambiguous fields and schema drift,Current user schema,Data Owner,Pre-launch,Proposed
+BKL-006,Define qualifying activity and as-of timestamp for activity flags,High,Current 7d/30d flags cannot be independently reproduced,User snapshot logic,Product + Data,Pre-launch,Proposed
+BKL-007,Implement task activity lifecycle and validation outcome,High,"Enables task funnel, failure and completion KPIs",Task service,Engineering + Product,Pre-launch,Proposed
+BKL-008,Implement referral relationship and conversion rule versioning,High,Registration cannot be treated as referral conversion,Referral service,Growth + Engineering,Pre-launch,Proposed
+BKL-009,Add data quality checks at ingestion and transformation,High,"Prevents invalid IDs, statuses, timestamps and duplicates reaching dashboards",Pipeline,Data Engineering,Pre-launch,Proposed
+BKL-010,Create role-based analytical access and remove unnecessary direct identifiers,High,Reduces privacy exposure,Data platform,Privacy + Engineering,Pre-launch,Proposed
+BKL-011,Create executive and domain dashboard views after data contracts stabilise,Medium,Dashboards built on incomplete definitions create misleading reporting,Analytics marts,Data/BI,Post instrumentation,Proposed
+BKL-012,Add support/content instrumentation only after approved reporting use case,Low,Avoids unnecessary collection,Support/CMS,Support + Product,Later,Proposed
+BKL-013,"Set raw-data retention, deletion and audit policy",High,Required for governance and lifecycle controls,Data platform,Privacy + Engineering,Pre-launch,Proposed
+BKL-014,Establish metric/event change review and version log,Medium,Prevents silent definition changes and broken historical comparisons,Governance process,Product + Data,Pre-launch,Proposed
