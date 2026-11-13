@@ -1,53 +1,54 @@
 # VELOOP Rewards — Task 01 Data Analytics
 
-**Review status:** Initial evaluation 65%; Task 01 was **not approved**. This repository contains the Revision 2 evidence prepared for VELOOP re-review. Final acceptance remains with VELOOP.
+**Assignment:** Product Analytics, Data Readiness & Data Management Blueprint  
+**Review status:** Revision 2 prepared for re-review. The preliminary evaluation was **65% and not approved**; VELOOP acceptance remains pending.  
+**Public showcase:** https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
 
-**Assignment:** Product Analytics, Data Readiness & Data Management Blueprint.
+## Start here — reviewer navigation
 
-## Start here
-
-1. [Review response and requirement-to-evidence map](public/docs/REVIEW_RESPONSE.md)
-2. [Executive summary](public/deliverables/executive-summary.md)
-3. [Product data readiness audit](public/deliverables/product-data-readiness-audit.md)
-4. [Final consolidated report](public/deliverables/final-consolidated-report.md)
-5. [Reproducibility guide](public/docs/REPRODUCIBILITY.md)
-6. [Seven-dashboard viewer](public/dashboard-wireframes.html)
-7. [Analytics implementation playbook](public/docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md)
-
-## Direct links to review deliverables
-
-| Required evidence | Direct file |
+| Review need | Direct artifact |
 |---|---|
-| Executive summary | [Executive summary](public/deliverables/executive-summary.md) |
-| Product data audit | [Audit report](public/deliverables/product-data-readiness-audit.md) · [Product-area audit schedule](public/deliverables/product-data-audit.csv) |
-| Data coverage and gaps | [Product-area mapping](public/deliverables/product-area-mapping.csv) · [Gap register](public/deliverables/gap-assessment.csv) |
-| Simulated data profiling / calculations | [Reproducibility guide](public/docs/REPRODUCIBILITY.md) · [Observed metrics](public/analysis/observed_metrics.csv) · [Onboarding by source](public/analysis/onboarding_by_acquisition_source.csv) |
-| Data-quality audit | [Quality audit report](public/deliverables/data-quality-audit-report.md) · [Issue register](public/deliverables/data-quality-issue-register.csv) · [Messy-fixture counts](public/analysis/messy_audit_quality_counts.csv) |
-| Reproduction code | [Python script](public/analysis/reproduce_metrics.py) · [Run instructions](public/analysis/README_REPRODUCIBILITY.md) |
-| Data dictionary | [84-field data dictionary CSV](public/deliverables/data-dictionary.csv) |
-| KPI catalogue | [42 KPI definitions](public/deliverables/kpi-catalogue.csv) |
-| Event tracking plan | [35 event contracts](public/deliverables/event-tracking-plan.csv) · [Event classification guide](public/deliverables/event-classification-guide.csv) |
-| Developer analytics handoff | [35 implementation requirements](public/deliverables/developer-handoff.csv) |
-| Logical model / ERD | [ERD SVG](public/diagrams/LOGICAL_MODEL.svg) · [Mermaid source](public/diagrams/LOGICAL_MODEL.mmd) · [Entity model](public/deliverables/entity-model.csv) |
-| Seven dashboard wireframes | [7-screen viewer](public/dashboard-wireframes.html) · [Design explanations](public/docs/DASHBOARD_DESIGN_SPECIFICATIONS.md) · [Dashboard visual schedule](public/deliverables/dashboard-blueprint.csv) |
-| Pipeline and operating model | [Implementation playbook](public/docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md) · [Pipeline proposal](public/deliverables/pipeline-proposal.csv) |
-| Privacy and governance | [Governance schedule](public/deliverables/privacy-governance.csv) · [Third-party controls](public/deliverables/third-party-dependency-controls.csv) |
-| Implementation backlog | [Prioritised backlog](public/deliverables/implementation-backlog.csv) |
-| Assumptions and verification | [Assumption register](public/deliverables/assumption-register.csv) · [Source verification](public/deliverables/source-verification-register.csv) |
-| Final documentation | [Consolidated report](public/deliverables/final-consolidated-report.md) · [Review response](public/docs/REVIEW_RESPONSE.md) |
+| Response to the review | [Review response](docs/REVIEW_RESPONSE.md) |
+| Executive summary | [Executive summary](deliverables/executive-summary.md) |
+| Consolidated report | [Final consolidated report](deliverables/final-consolidated-report.md) |
+| Product data audit | [Product data readiness audit](deliverables/product-data-readiness-audit.md) |
+| Reproducible calculations | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
+| Numerators, denominators and formulas | [Observed metrics CSV](analysis/observed_metrics.csv) |
+| Onboarding by acquisition source | [Source breakdown CSV](analysis/onboarding_by_acquisition_source.csv) |
+| Messy-fixture QA counts | [Audit counts CSV](analysis/messy_audit_quality_counts.csv) |
+| Reproduction script | [Python script](analysis/reproduce_metrics.py) |
+| Seven dashboard wireframes | [Wireframe viewer](dashboard-wireframes.html) and [dashboard design specifications](docs/DASHBOARD_DESIGN_SPECIFICATIONS.md) |
+| Detailed dashboard visual specifications | [Dashboard blueprint CSV](deliverables/dashboard-blueprint.csv) |
+| Data dictionary | [Data dictionary CSV](deliverables/data-dictionary.csv) |
+| KPI catalogue | [KPI catalogue CSV](deliverables/kpi-catalogue.csv) |
+| Event tracking plan | [Event tracking plan CSV](deliverables/event-tracking-plan.csv) |
+| Developer handoff | [Developer handoff CSV](deliverables/developer-handoff.csv) |
+| Logical model | [ER diagram source](diagrams/LOGICAL_MODEL.mmd) |
+| Proposed implementation | [Analytics implementation playbook](docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md) |
+| Prioritised backlog | [Implementation backlog CSV](deliverables/implementation-backlog.csv) |
+| Assumptions and unknowns | [Assumption register CSV](deliverables/assumption-register.csv) |
 
-## Analytical calculations and limits
+## What is included
 
-The clean sample contains 1,000 records and 1,000 unique non-null user IDs. Calculated sample results include verified email 855/1,000 (85.5%), onboarding complete 722/1,000 (72.2%), supplied Active 7d flag 78/1,000 (7.8%), Active 30d flag 325/1,000 (32.5%), Referral acquisition share 119/1,000 (11.9%), consent accepted 923/1,000 (92.3%) and marketing opt-in 442/1,000 (44.2%). The separate 1,008-row messy QA fixture contains 8 excess duplicate rows and is not the KPI population.
+The project covers the assignment's 21 deliverables: executive summary; product data audit; data coverage; user/account, earning/reward, wallet/withdrawal and referral/engagement specifications; event tracking; data dictionary; logical data model; KPI catalogue; simulated profiling; data quality; dashboard blueprint; developer handoff; pipeline; privacy/governance; readiness; assumptions; backlog; and consolidated report.
 
-All source data is marked **SIMULATED / FICTIONAL**. These figures describe only the Task 01 exercise sample, not VELOOP production users or performance. Snapshot flags are not event-derived DAU/MAU or retention. Referral acquisition is not referral conversion. Transactional and time-series KPIs require the corresponding history tables.
+The structured public review copy exposes aggregate evidence, proposed design schedules, a seven-screen viewer, reproducibility instructions and engineering specifications. The formatted PDF/XLSX/PPTX deliverables are retained in the separate review package; the public repository does not yet contain those binary attachments.
 
-## Data protection and evidence boundary
+## Data integrity and scope
 
-The public repository intentionally excludes the original row-level source workbook and the original user-level profiling workbook because they contain name/email-style fields. Aggregate counts, formulas, methodology and review-safe specifications are published instead. The messy sheet is an audit fixture only. Proposed events, architecture, data controls and dashboards are designs—not verified production implementations.
+The supplied Task 01 workbook explicitly labels its records **SIMULATED / FICTIONAL / FOR ANALYTICAL WORK ONLY**. All observed values describe only that exercise dataset and are not actual VELOOP customer or production statistics.
 
-The live GitHub Pages site is a static project showcase and wireframe viewer, not a deployed VELOOP application or interactive production BI dashboard.
+- **Source-observed:** fields and records contained in the supplied assignment workbook.
+- **Calculated:** reproducible counts and ratios derived from that simulated sample.
+- **Proposed:** events, models, KPIs, controls, architecture and dashboard specifications.
+- **To Be Verified:** production implementation and product details not evidenced by the supplied material.
 
-## Current status
+The original workbook and the raw row-level profiling snapshot are not published here because they contain name/email-style and other identifiers. A public-safe profiling workbook and aggregate evidence are provided in the review package. The reproduction instructions use the original assignment workbook locally and do not transmit it.
 
-Revision 2 responds to the review requirements and is prepared for independent review. It does **not** claim Task 01 approval or internship completion. See [current progress](docs/CURRENT_PROGRESS.md) and [review response](public/docs/REVIEW_RESPONSE.md).
+## Dashboard / deployment boundary
+
+The seven dashboard screens are wireframes and specifications, not a deployed analytics dashboard. The GitHub Pages site is a static project showcase and reviewer navigation page; it is not a VELOOP production application, live data pipeline or interactive BI system.
+
+## Repository status
+
+See [current progress](docs/CURRENT_PROGRESS.md), [publication inventory](docs/PUBLICATION_INVENTORY.md), and [data integrity policy](docs/DATA_INTEGRITY_AND_EVIDENCE.md).

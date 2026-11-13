@@ -1,39 +1,61 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="VELOOP Rewards Task 01 — analytics design, simulated data evidence, seven dashboard wireframes and implementation documentation.">
-<title>VELOOP Rewards | Task 01 Review Revision 2</title>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="VELOOP Rewards Task 01 review revision: direct analytics evidence, seven dashboard wireframes, event contracts, KPIs and implementation plan.">
+<title>VELOOP Rewards | Task 01 Review Revision</title>
 <style>
-:root{color-scheme:dark;--bg:#101511;--panel:#19221d;--line:#304238;--text:#edf5ef;--muted:#a8b8ad;--accent:#8de0ae}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#203a2a 0,transparent 35%),var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,Arial,sans-serif}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
-header{padding:24px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.15em;color:var(--accent);font-weight:800}
-.hero{padding:66px 0 42px}.eyebrow{color:var(--accent);letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-weight:700}h1{font-size:clamp(34px,6vw,62px);letter-spacing:-.04em;line-height:1.06;max-width:900px;margin:14px 0}.lead{max-width:790px;color:var(--muted);font-size:19px}.status{display:inline-block;margin-top:18px;border:1px solid #806c44;color:#f1d5a4;background:#332b1e;border-radius:24px;padding:5px 12px;font-size:12px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:11px 16px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--text);font-weight:650}.primary{background:var(--accent);color:#102017;border-color:var(--accent)}
-section{padding:26px 0}h2{font-size:24px;line-height:1.2;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:14px}.card{background:linear-gradient(150deg,#1d2a22,#151d18);border:1px solid var(--line);border-radius:15px;padding:19px}.card p{color:var(--muted);margin:0}.big{font-size:29px;font-weight:800;color:var(--accent)}a{color:#b1ebc5}.notice{border-left:3px solid var(--accent);background:#17251c;padding:14px 17px;border-radius:0 9px 9px 0;color:#dbe9df}.links a{display:inline-block;margin:5px 8px 5px 0}.small{color:var(--muted);font-size:13px}
-footer{padding:26px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-</style></head><body><header><div class="wrap">VELOOP REWARDS / TASK 01 DATA ANALYTICS</div></header>
+:root{color-scheme:dark;--bg:#0f1512;--panel:#17221c;--line:#2d4034;--text:#eff6f0;--muted:#a8b9ad;--accent:#8be0aa}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 84% 0%,#1d3c2a 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,Segoe UI,Arial,sans-serif}
+.wrap{width:min(1100px,calc(100% - 36px));margin:auto}.top{padding:24px 0;border-bottom:1px solid var(--line)}.brand{font-size:13px;font-weight:750;letter-spacing:.14em;color:var(--accent)}
+.hero{padding:66px 0 42px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:750}h1{font-size:clamp(34px,5vw,60px);line-height:1.06;letter-spacing:-.04em;max-width:850px;margin:14px 0}.lead{font-size:19px;color:var(--muted);max-width:780px}
+.state{display:inline-block;margin-top:20px;padding:5px 11px;border:1px solid #946d36;border-radius:99px;color:#f3d49d;font-size:12px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:10px 15px;border:1px solid var(--line);border-radius:9px;color:var(--text);text-decoration:none;font-weight:650}.primary{background:var(--accent);color:#0f2117;border-color:var(--accent)}
+section{padding:26px 0}h2{font-size:24px;margin:0 0 14px}h3{font-size:16px;margin:0 0 8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.card{background:linear-gradient(155deg,#1b2a21,#151e19);border:1px solid var(--line);border-radius:14px;padding:18px}.card p{color:var(--muted);margin:0}.num{font-size:28px;font-weight:760;color:var(--accent)}ul{color:var(--muted);padding-left:20px}.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:8px}.files a{display:block;padding:10px 12px;background:#17231c;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:#c5efd2}.files a:hover{border-color:var(--accent)}.notice{border-left:3px solid var(--accent);background:#18271e;padding:14px 17px;color:#d8e8dc;border-radius:0 9px 9px 0}.foot{padding:28px 0 48px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+</style></head>
+<body><header class="top"><div class="wrap"><div class="brand">VELOOP REWARDS / DATA ANALYTICS</div></div></header>
 <main class="wrap">
-<div class="hero"><div class="eyebrow">Data Analyst Internship · Review Revision 2</div>
+<div class="hero"><div class="eyebrow">Data Analyst Internship · Task 01 · Review Revision 2</div>
 <h1>Product Analytics &amp; Data Readiness Blueprint</h1>
-<p class="lead">A reviewable analytical foundation: source audit, reproducible sample calculations, event and KPI specifications, logical data model, seven dashboard wireframes and an implementation playbook.</p>
-<div class="status">Initial review: 65% · Not approved · Revision submitted for re-review</div>
-<div class="actions"><a class="btn primary" href="https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics">Open GitHub repository</a><a class="btn" href="https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/blob/main/README.md">Read deliverable index</a></div>
-</div>
-<section><h2>Review evidence at a glance</h2><div class="grid">
-<div class="card"><div class="big">1,000</div><p>Clean simulated snapshot rows; 1,000 unique non-null user IDs</p></div>
-<div class="card"><div class="big">84</div><p>Data dictionary fields documented</p></div>
-<div class="card"><div class="big">42</div><p>KPI catalogue definitions</p></div>
-<div class="card"><div class="big">35 + 35</div><p>Event records and developer handoff requirements</p></div>
-<div class="card"><div class="big">7</div><p>Dashboard wireframe screens</p></div>
-<div class="card"><div class="big">39</div><p>Dashboard visual specifications</p></div>
+<p class="lead">A reviewer-facing index of the actual analytical schedules, reproducible sample calculations, seven dashboard designs, event contracts and proposed implementation path.</p>
+<span class="state">Initial review: 65% · Not approved · Re-review pending</span>
+<div class="actions"><a class="btn primary" href="https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics">Open GitHub repository</a><a class="btn" href="https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/blob/main/README.md">Reviewer README</a></div></div>
+<section><h2>Project evidence</h2><div class="grid">
+<div class="card"><div class="num">21</div><h3>Required deliverables</h3><p>Audit, specifications, event plan, data model, KPI catalogue, quality, dashboards, governance and backlog.</p></div>
+<div class="card"><div class="num">7</div><h3>Dashboard wireframes</h3><p>Executive, user, engagement, rewards, wallet, withdrawals and referrals.</p></div>
+<div class="card"><div class="num">39</div><h3>Visual specifications</h3><p>Metric logic, source, filters, dimensions, business question and readiness notes.</p></div>
+<div class="card"><div class="num">37</div><h3>Proposed events</h3><p>Event names, triggers, payload properties and validation contracts for engineering review.</p></div>
 </div></section>
-<section><h2>Seven dashboard wireframes</h2><div class="notice">Open the seven-screen viewer. Each screen explains its audience, purpose, visual groups, decisions and source-readiness boundary. These are blueprints, not deployed production dashboards.</div>
-<div class="actions"><a class="btn primary" href="public/dashboard-wireframes.html">Open all seven wireframes</a><a class="btn" href="public/docs/DASHBOARD_DESIGN_SPECIFICATIONS.md">Read dashboard design specifications</a></div></section>
-<section><h2>Direct deliverable access</h2><div class="grid links">
-<div class="card"><h3>Executive and audit</h3><p><a href="public/deliverables/executive-summary.md">Executive summary</a><br><a href="public/deliverables/product-data-readiness-audit.md">Product data readiness audit</a><br><a href="public/deliverables/data-quality-audit-report.md">Data quality audit</a><br><a href="public/deliverables/final-consolidated-report.md">Final consolidated report</a></p></div>
-<div class="card"><h3>Analytical evidence</h3><p><a href="public/docs/REPRODUCIBILITY.md">Reproducibility guide</a><br><a href="public/analysis/observed_metrics.csv">Observed metrics</a><br><a href="public/analysis/onboarding_by_acquisition_source.csv">Onboarding by source</a><br><a href="public/analysis/reproduce_metrics.py">Reproduction script</a></p></div>
-<div class="card"><h3>Analytics specifications</h3><p><a href="public/deliverables/data-dictionary.csv">Data dictionary</a><br><a href="public/deliverables/kpi-catalogue.csv">KPI catalogue</a><br><a href="public/deliverables/event-tracking-plan.csv">Event tracking plan</a><br><a href="public/deliverables/developer-handoff.csv">Developer handoff</a></p></div>
-<div class="card"><h3>Model and delivery plan</h3><p><a href="public/diagrams/LOGICAL_MODEL.svg">Logical ERD (SVG)</a><br><a href="public/diagrams/LOGICAL_MODEL.mmd">ERD source</a><br><a href="public/docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md">Implementation playbook</a><br><a href="public/deliverables/implementation-backlog.csv">Implementation backlog</a></p></div>
+<section><h2>Review artifacts</h2><div class="files">
+<a href="docs/REVIEW_RESPONSE.md">Review response mapping</a>
+<a href="deliverables/executive-summary.md">Executive summary</a>
+<a href="deliverables/final-consolidated-report.md">Final consolidated report</a>
+<a href="deliverables/product-data-readiness-audit.md">Product data readiness audit</a>
+<a href="analysis/README_REPRODUCIBILITY.md">Reproducibility guide</a>
+<a href="analysis/observed_metrics.csv">Observed metrics evidence (CSV)</a>
+<a href="analysis/onboarding_by_acquisition_source.csv">Onboarding by acquisition source (CSV)</a>
+<a href="analysis/messy_audit_quality_counts.csv">Messy audit QA counts (CSV)</a>
+<a href="analysis/reproduce_metrics.py">Reproduction script</a>
+<a href="dashboard-wireframes.html">Seven-dashboard wireframe viewer</a>
+<a href="docs/DASHBOARD_DESIGN_SPECIFICATIONS.md">Dashboard design explanations</a>
+<a href="deliverables/dashboard-blueprint.csv">Dashboard visual blueprint (CSV)</a>
+<a href="deliverables/data-dictionary.csv">Data dictionary (CSV)</a>
+<a href="deliverables/kpi-catalogue.csv">KPI catalogue (CSV)</a>
+<a href="deliverables/event-tracking-plan.csv">Event tracking plan (CSV)</a>
+<a href="deliverables/developer-handoff.csv">Developer handoff (CSV)</a>
+<a href="docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md">Analytics implementation playbook</a>
+<a href="deliverables/implementation-backlog.csv">Implementation backlog (CSV)</a>
+<a href="deliverables/assumption-register.csv">Assumption and verification register (CSV)</a>
+<a href="diagrams/LOGICAL_MODEL.mmd">Logical data model source</a>
+<a href="docs/CURRENT_PROGRESS.md">Current progress</a>
+<a href="docs/PUBLICATION_INVENTORY.md">Publication inventory</a>
 </div></section>
-<section><h2>Data integrity boundary</h2><div class="notice"><strong>All supplied Task 01 records are SIMULATED / FICTIONAL.</strong> The reported percentages describe only the exercise sample, not actual VELOOP users, revenue or product performance. Snapshot activity flags are not event-derived DAU/MAU or retention. Referral acquisition is not referral conversion. Transactional and time-series measures need the relevant history tables.</div><p class="small">The original user-level source workbook and profiling workbook are intentionally not published because they contain name/email-style fields. Aggregate metrics and reproducible methodology are public. Proposed tracking, data architecture, privacy controls and dashboards are not claims of production implementation.</p></section>
-<section><h2>Current status</h2><div class="card"><p>Revision 2 responds to the reviewer’s requirements and is prepared for independent re-review. The preliminary score was 65% and the task was not approved. No final acceptance or internship completion is claimed; VELOOP’s decision is pending.</p></div></section>
-</main><footer><div class="wrap">VELOOP Rewards · Data Analyst Internship · Task 01<br>Static project showcase and wireframe viewer; not a deployed VELOOP product or production BI system.</div></footer></body></html>
+<section><h2>Data integrity and limitations</h2><div class="notice"><strong>Important:</strong> All supplied Task 01 records are explicitly simulated/fictional. Calculations describe only the exercise sample. Proposed events, pipelines and dashboards are not verified production implementations.</div><ul>
+<li>The clean sample is 1,000 rows; the messy 1,008-row sheet is a QA fixture and is excluded from KPI denominators.</li>
+<li>Supplied 7-day and 30-day flags are not event-derived DAU/MAU or retention.</li>
+<li>Referral acquisition is not referral conversion; withdrawal request is not successful payout.</li>
+<li>The original row-level workbook and raw profile snapshot are excluded from public hosting; public-safe aggregate outputs are provided.</li>
+<li>This website is a static project showcase and review index, not an interactive BI dashboard or VELOOP production application.</li>
+</ul></section>
+</main><footer class="foot"><div class="wrap">VELOOP Rewards · Task 01 · Revision 2 prepared for re-review. Acceptance remains subject to the reviewer's decision.</div></footer>
+</body></html>

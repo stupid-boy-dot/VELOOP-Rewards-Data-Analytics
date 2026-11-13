@@ -1,37 +1,36 @@
-# Current Progress — Task 01 Review Revision 2
+# Current Progress — Review Revision 2
 
-**Last updated:** 13 November 2026  
-**Reviewer status:** Initial evaluation 65%; Task 01 not approved. Revision 2 response and public review evidence prepared; final re-review decision pending.
+**Status:** Revision 2 prepared for re-review; initial evaluation 65%, not approved. VELOOP acceptance remains pending.  
+**Last updated:** 2026-11-13
 
-## Reviewer requirements addressed
+## Changes made against the review
 
-- Published direct repository links for executive summary, audit, data dictionary, KPI catalogue, event plan, developer handoff, logical model, seven dashboard wireframes and final documentation.
-- Added a seven-screen HTML wireframe viewer and separate design specification covering audience, purpose, panels, decisions and source-readiness caveats for every dashboard.
-- Added calculation evidence with numerators, denominators, formulas, source fields, interpretation constraints and source-by-onboarding breakdowns.
-- Added a Python standard-library reproduction script and run instructions; the script uses local CSV exports and does not transmit source data.
-- Expanded the event tracking plan and developer handoff into reviewable structured schedules with triggers, IDs, properties, validation, deduplication, timestamps and acceptance requirements.
-- Added a practical implementation playbook describing source confirmation, client/server collection, immutable landing, validation/quarantine, curated models, semantic KPIs, ownership and phased release gates.
-- Kept public evidence aggregate-only; original row-level workbooks containing name/email-style fields are excluded.
+- Created a review response mapping each requested improvement to its evidence.
+- Added a reproducible aggregate analysis workbook with formula-driven ratios, numerators, denominators, QA counts and caveats.
+- Ran the reproduction script against the exact `Users_1000_Clean` and `Users_Messy_Audit` sheets from the supplied ZIP; the script output matched the workbook values.
+- Added the reproducibility guide and aggregate CSV evidence.
+- Added explanations for all seven dashboard wireframes and a 39-visual dashboard specification report.
+- Added a phased analytics implementation playbook, including source-to-dashboard gates, data contracts, quality controls, roles and rollout evidence.
+- Created a public-safe profiling workbook: the raw row-level snapshot sheet was removed and name/email/identifier examples were redacted.
 
-## Main public evidence
+## Existing deliverables retained
 
-- Root README with direct links to all public review files
-- Executive summary, readiness audit, data-quality report and consolidated report
-- 84-field data dictionary, 42 KPI entries, 35 event records and 35 developer handoff requirements
-- Seven-dashboard viewer and specifications, plus 39-visual dashboard design report schedule
-- Aggregate calculated metrics, onboarding-by-source breakdown, messy QA counts and reproduction script
-- Logical model SVG/Mermaid, entity and relationship schedules
-- Pipeline, privacy/governance, assumption, gap and implementation backlog schedules
+The original prepared package still contains the 21-deliverable set, the 7-page dashboard wireframe PDF, the proposed logical ERD, a detailed 37-event tracking plan and developer handoff. The revised package adds the review response, analysis workbook and expanded explanatory material.
 
-## Technical publication notes
+## Public publication
 
-- GitHub repository is public; GitHub Pages serves the static project showcase.
-- Live page: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
-- The viewer is a documentation/wireframe artifact, not a production dashboard.
-- The original source workbook and user-level profiling workbook remain excluded from public GitHub because they contain direct identifier-style fields.
+- Public GitHub repository: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
+- GitHub Pages showcase: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
+- Repository now includes the direct reviewer index, aggregate calculations, reproducibility script, event/KPI/data dictionary schedules, dashboard design descriptions and implementation playbook.
+- The original row-level source workbook and raw profiling snapshot remain excluded from public hosting.
 
-## Out of verified scope
+## Remaining external dependency
 
-Production instrumentation, source integrations, backend events, ingestion infrastructure, live reward/wallet/withdrawal histories, operational privacy controls and interactive BI deployment have not been verified as implemented. They remain proposed VELOOP implementation work requiring owner approval.
+- Submit the updated public repository and the full formatted PDF/XLSX review package to VELOOP through its specified channel.
+- Await reviewer feedback and make any requested changes.
+- Obtain explicit Task 01 approval; the current score/review is not an approval.
+- Production event instrumentation, pipelines, privacy controls and interactive dashboards remain proposed and unverified.
 
-**Next gate:** reviewer independently verifies the published files and responds with approval or further requested changes. No approval or internship completion is claimed.
+## Evidence boundary
+
+The current evidence proves reproducible calculations against the supplied simulated workbook and documented analytical designs. It does not prove any VELOOP production instrumentation, live transactional source, data infrastructure or deployed analytics dashboard.

@@ -1,25 +1,28 @@
-# Public Repository Publication Inventory
+# Publication Inventory — Review Revision 2
 
-## Published to this repository
+## Published in the repository
 
-- Project README
-- Assignment scope and work-package summary
-- Data integrity and evidence policy
-- Pre-submission progress log
-- Aggregate simulated-data findings with explicit caveats
-- Proposed analytics pipeline documentation
-- Logical data model overview
-- Pipeline diagram source (Mermaid)
-- Public data-folder publication rules
+- Reviewer README and direct navigation
+- Review response, reproducibility guide, dashboard specifications and implementation playbook
+- Current progress and data-integrity policy
+- Aggregate metric evidence and reproduction script
+- KPI, data dictionary, event tracking and developer handoff schedules
+- Seven-dashboard wireframe viewer and logical model source
 
-## Prepared separately, not yet mirrored here
+## Retained in the formatted review package
 
-The formatted submission ZIP contains the final reports, Excel workbooks, handover presentation and supporting visual assets. These binary deliverables are not yet mirrored file-by-file in this GitHub repository.
+- Executive summary and consolidated report
+- Product data readiness audit and domain specifications
+- Readiness assessment, data dictionary, event tracking plan, developer handoff
+- Seven-page dashboard wireframe PDF and 39-visual blueprint report
+- Original analytics workbooks and handover presentation
+- Formula-driven reproducible workbook and public-safe profiling workbook
 
-## Excluded from public publication
+## Excluded from public hosting
 
-The original user-level Task 01 source workbook is excluded because it contains name/email-style columns. It remains part of the locally retained submission package for traceability and should only be shared through an approved submission channel.
+- Original row-level source workbook: contains name/email-style fields and direct identifiers.
+- Original audit workbook's Clean Data Snapshot tab: row-level values and identifier-style examples. A public-safe copy retains aggregate profiling, validation findings and dictionary review with identifier examples redacted.
 
-## Next publication step
+## Evidence boundary
 
-Add the approved PDF and Excel deliverables to the corresponding repository folders after confirming the team's expectations for public access and source-data handling.
+GitHub Pages is a static project showcase and navigation page. Proposed pipelines, events, access controls and dashboards are not represented as implemented production features.
