@@ -1,0 +1,9 @@
+Area,Key Object / Event,Definition,Required Data,Source,Control / Interpretation,Status
+Wallet transaction,transaction_id,Unique immutable ledger ID,user_id; timestamp; transaction_type; amount; unit; status; source; reference_id,Backend wallet ledger,Unique ID; no duplicate posting; explicit unit,Proposed
+Reward credit,credit,A reward becomes available in wallet,reward_transaction_id; wallet transaction ID; amount; unit; created_at,Backend reward + wallet,Link reward and wallet ledger; do not count pending reward as credited,Proposed
+Redemption/debit,redemption,User redeems or spends available balance,transaction_id; user_id; amount; unit; status; reference_id,Backend wallet,Validate available balance and approved transaction type,Proposed
+Reversal,reversal,A prior transaction is compensated,transaction_id; original_transaction_id; amount; unit; reason_category,Backend wallet,Separate compensating record; original row retained,Proposed
+Withdrawal request,withdrawal_requested,User submits request,withdrawal_id; user_id; requested_amount; unit; method; requested_at,Backend withdrawal service,Positive amount; approved method enum; no raw payout credentials,Proposed
+Withdrawal processing,withdrawal_processing,Request enters review/processing,withdrawal_id; status; processing_at,Backend operations workflow,State transition and timestamp order validated,Proposed
+Withdrawal final outcome,completed / rejected / reversed,Request reaches terminal state,withdrawal_id; status; finalised_at; amount; unit; reason category where relevant,Backend + payout provider confirmation,Terminal status must be authoritative and auditable,Proposed
+Processing duration,requested_at to finalised_at,Elapsed time for finalised requests,withdrawal_id; requested_at; finalised_at; terminal status,Analytics transformation,Exclude still-open requests from completed processing-time average,Proposed

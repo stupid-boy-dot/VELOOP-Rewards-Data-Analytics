@@ -1,0 +1,15 @@
+VELOOP REWARDS — TASK 01 ANALYTICS IMPLEMENTATION BLUEPRINT,
+Version,v03 | 10 Nov 2026
+Scope,Task 01 approved dataset only for observed data; proposed schemas/events are design recommendations.
+Source dataset,VELoop_Rewards_Data_01 (1)(1).xlsx
+Authenticity,The supplied user dataset is SIMULATED / FICTIONAL. No metric in this pack is a production VELOOP result.
+Admin scope,Use Task 01 dataset only. Do not merge the separate simulated behaviour workbook.
+Evidence labels,Confirmed in Task 01 = observed field/structure; Proposed = recommended future design; To Be Verified = implementation/policy status unknown.
+Critical limitation,"Task 01 workbook contains only Users_1000_Clean, Users_Messy_Audit, Data_Dictionary, Synthetic_Summary and README_Data_Status. It does not contain task, reward, wallet, withdrawal, referral event, support or feature-event fact tables."
+Interpretation,KPIs requiring event/transaction datasets are specified but marked Not calculable from supplied Task 01 dataset.
+No fabrication,"No production performance, implementation, targets, internal system status, or financial outcomes are asserted."
+Workbook contents,KPI Catalogue; Event Tracking Plan; Data Dictionary; Entity Model; Dashboard Blueprint; Developer Handoff; Pipeline; Privacy & Governance; Change Log; Gap Assessment; Assumption Register; Implementation Backlog.
+Use,Engineering/product review draft. Proposed fields/events require owner approval before implementation.
+Compliance enhancement,"Added Source Verification Register, Standards & Conventions, and normalized Data Quality Issue Register to address assignment-specific register fields, event naming rationale and issue-level audit schema."
+v03 additions,Explicit event classification; third-party callback/reconciliation controls; relationship cardinality and bridge-table design.
+Interpretation,"All new event classifications, integration controls and relationships are proposed design requirements, not verified VELOOP implementation."
