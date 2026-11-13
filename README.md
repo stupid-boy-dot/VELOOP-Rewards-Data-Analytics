@@ -22,17 +22,21 @@
 | Data dictionary | [Data dictionary CSV](deliverables/data-dictionary.csv) |
 | KPI catalogue | [KPI catalogue CSV](deliverables/kpi-catalogue.csv) |
 | Event tracking plan | [Event tracking plan CSV](deliverables/event-tracking-plan.csv) |
-| Developer handoff | [Developer handoff CSV](deliverables/developer-handoff.csv) |
+| Developer handoff | [Detailed developer handoff](deliverables/developer-handoff.md) |
 | Logical model | [ER diagram source](diagrams/LOGICAL_MODEL.mmd) |
 | Proposed implementation | [Analytics implementation playbook](docs/ANALYTICS_IMPLEMENTATION_PLAYBOOK.md) |
 | Prioritised backlog | [Implementation backlog CSV](deliverables/implementation-backlog.csv) |
 | Assumptions and unknowns | [Assumption register CSV](deliverables/assumption-register.csv) |
+| Data readiness scorecard | [Readiness scorecard CSV](deliverables/readiness-scorecard.csv) |
+| Product area mapping | [Product-area mapping CSV](deliverables/product-area-mapping.csv) |
+| Gap assessment | [Gap assessment CSV](deliverables/gap-assessment.csv) |
+| Implementation backlog | [Implementation backlog CSV](deliverables/implementation-backlog.csv) |
 
 ## What is included
 
 The project covers the assignment's 21 deliverables: executive summary; product data audit; data coverage; user/account, earning/reward, wallet/withdrawal and referral/engagement specifications; event tracking; data dictionary; logical data model; KPI catalogue; simulated profiling; data quality; dashboard blueprint; developer handoff; pipeline; privacy/governance; readiness; assumptions; backlog; and consolidated report.
 
-The structured public review copy exposes aggregate evidence, proposed design schedules, a seven-screen viewer, reproducibility instructions and engineering specifications. The formatted PDF/XLSX/PPTX deliverables are retained in the separate review package; the public repository does not yet contain those binary attachments.
+The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The original formatted PDF/XLSX/PPTX files remain in the separate review package and are not yet hosted as GitHub binary assets.
 
 ## Data integrity and scope
 
