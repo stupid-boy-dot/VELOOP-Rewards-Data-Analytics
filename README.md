@@ -6,6 +6,9 @@
 
 ## Start here — reviewer navigation
 
+**[Reviewer Access Guide — all 21 deliverables](docs/REVIEWER_ACCESS_GUIDE.md)** · **[Download the public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip)** · [Rendered ER diagram](docs/LOGICAL_DATA_MODEL.md)
+
+
 | Review need | Direct artifact |
 |---|---|
 | Response to the review | [Review response](docs/REVIEW_RESPONSE.md) |
@@ -58,7 +61,7 @@
 
 The project covers the assignment's 21 deliverables: executive summary; product data audit; data coverage; user/account, earning/reward, wallet/withdrawal and referral/engagement specifications; event tracking; data dictionary; logical data model; KPI catalogue; simulated profiling; data quality; dashboard blueprint; developer handoff; pipeline; privacy/governance; readiness; assumptions; backlog; and consolidated report.
 
-The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The formatted PDFs, XLSX workbooks and PPTX deck are in the separate source-safe review archive. They are not yet attached as GitHub release binaries.
+The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The GitHub release now includes a downloadable **public source bundle** containing 52 repository files (Markdown, CSV, HTML, Mermaid and Python evidence). This is a source bundle, not the separate formatted PDF/XLSX/PPTX handover archive. Those formatted binary files are not attached to the public release at this time; see the [Reviewer Access Guide](docs/REVIEWER_ACCESS_GUIDE.md) for the exact publication boundary.
 
 ## Data integrity and scope
 
@@ -77,4 +80,4 @@ The master blueprint contains 28 worksheets, including a dedicated 39-row Dashbo
 
 ## Repository status
 
-See [current progress](docs/CURRENT_PROGRESS.md), [publication inventory](docs/PUBLICATION_INVENTORY.md), [package QA report](docs/PACKAGE_QA_REPORT.md), and [data integrity policy](docs/DATA_INTEGRITY_AND_EVIDENCE.md).
+See the [21-deliverable reviewer access guide](docs/REVIEWER_ACCESS_GUIDE.md), [current progress](docs/CURRENT_PROGRESS.md), [publication inventory](docs/PUBLICATION_INVENTORY.md), [package QA report](docs/PACKAGE_QA_REPORT.md), and [data integrity policy](docs/DATA_INTEGRITY_AND_EVIDENCE.md).
