@@ -1,7 +1,7 @@
 # VELOOP Rewards — Task 01 Data Analytics
 
 **Assignment:** Product Analytics, Data Readiness & Data Management Blueprint  
-**Review status:** Revision 2 prepared for re-review. The preliminary evaluation was **65% and not approved**; VELOOP acceptance remains pending.  
+**Review status:** Revision 4 prepared for re-review. The preliminary evaluation was **65% and not approved**; VELOOP acceptance remains pending.  
 **Public showcase:** https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
 
 ## Start here — reviewer navigation
@@ -12,13 +12,18 @@
 | Executive summary | [Executive summary](deliverables/executive-summary.md) |
 | Consolidated report | [Final consolidated report](deliverables/final-consolidated-report.md) |
 | Product data audit | [Product data readiness audit](deliverables/product-data-readiness-audit.md) |
+| Official public-source review | [VEloop product source review](docs/PUBLIC_PRODUCT_SOURCE_REVIEW.md) |
+| Product/source crosswalk | [16-area crosswalk](deliverables/product-source-crosswalk.csv) |
+| 21-item publication inventory | [Publication inventory](docs/PUBLICATION_INVENTORY.md) |
+| Package-level QA | [Package QA report](docs/PACKAGE_QA_REPORT.md) |
 | Reproducible calculations | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
 | Numerators, denominators and formulas | [Observed metrics CSV](analysis/observed_metrics.csv) |
 | Onboarding by acquisition source | [Source breakdown CSV](analysis/onboarding_by_acquisition_source.csv) |
 | Messy-fixture QA counts | [Audit counts CSV](analysis/messy_audit_quality_counts.csv) |
 | Reproduction script | [Python script](analysis/reproduce_metrics.py) |
 | Seven dashboard wireframes | [Wireframe viewer](dashboard-wireframes.html) and [dashboard design specifications](docs/DASHBOARD_DESIGN_SPECIFICATIONS.md) |
-| Detailed dashboard visual specifications | [Dashboard blueprint CSV](deliverables/dashboard-blueprint.csv) |
+| Dashboard summary | [Dashboard blueprint CSV](deliverables/dashboard-blueprint.csv) |
+| 39 visual-level dashboard specifications | [Detailed visual specifications CSV](deliverables/dashboard-visual-specifications.csv) |
 | Data dictionary | [Data dictionary CSV](deliverables/data-dictionary.csv) |
 | KPI catalogue | [KPI catalogue CSV](deliverables/kpi-catalogue.csv) |
 | Event tracking plan | [Event tracking plan CSV](deliverables/event-tracking-plan.csv) |
@@ -53,7 +58,7 @@
 
 The project covers the assignment's 21 deliverables: executive summary; product data audit; data coverage; user/account, earning/reward, wallet/withdrawal and referral/engagement specifications; event tracking; data dictionary; logical data model; KPI catalogue; simulated profiling; data quality; dashboard blueprint; developer handoff; pipeline; privacy/governance; readiness; assumptions; backlog; and consolidated report.
 
-The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The original formatted PDF/XLSX/PPTX files remain in the separate review package and are not yet hosted as GitHub binary assets.
+The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The formatted PDFs, XLSX workbooks and PPTX deck are in the separate source-safe review archive. They are not yet attached as GitHub release binaries.
 
 ## Data integrity and scope
 
@@ -64,12 +69,12 @@ The supplied Task 01 workbook explicitly labels its records **SIMULATED / FICTIO
 - **Proposed:** events, models, KPIs, controls, architecture and dashboard specifications.
 - **To Be Verified:** production implementation and product details not evidenced by the supplied material.
 
-The original workbook and the raw row-level profiling snapshot are not published here because they contain name/email-style and other identifiers. A public-safe profiling workbook and aggregate evidence are provided in the review package. The reproduction instructions use the original assignment workbook locally and do not transmit it.
+The original Task 01 row-level source workbook is excluded from public hosting because it contains identifiers. A public-safe profiling workbook and aggregate evidence are provided in the review package. Use the authorized assignment copy for local reproduction.
 
 ## Dashboard / deployment boundary
 
-The seven dashboard screens are wireframes and specifications, not a deployed analytics dashboard. The GitHub Pages site is a static project showcase and reviewer navigation page; it is not a VELOOP production application, live data pipeline or interactive BI system.
+The master blueprint contains 28 worksheets, including a dedicated 39-row Dashboard Visual Specifications tab. The 10-row Dashboard Blueprint tab is a high-level summary. The seven dashboard screens are wireframes and specifications, not a deployed analytics dashboard. The GitHub Pages site is a static project showcase and reviewer navigation page; it is not a VELOOP production application, live data pipeline or interactive BI system.
 
 ## Repository status
 
-See [current progress](docs/CURRENT_PROGRESS.md), [publication inventory](docs/PUBLICATION_INVENTORY.md), and [data integrity policy](docs/DATA_INTEGRITY_AND_EVIDENCE.md).
+See [current progress](docs/CURRENT_PROGRESS.md), [publication inventory](docs/PUBLICATION_INVENTORY.md), [package QA report](docs/PACKAGE_QA_REPORT.md), and [data integrity policy](docs/DATA_INTEGRITY_AND_EVIDENCE.md).
