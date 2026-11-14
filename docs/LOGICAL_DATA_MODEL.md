@@ -1,0 +1,30 @@
+# Logical Data Model — ER Diagram
+
+The following Mermaid ER diagram renders directly in GitHub Markdown. It expresses the proposed analytical model; entities and relationships require owner/engineering confirmation before implementation.
+
+```mermaid
+erDiagram
+  USERS ||--o{ TASK_ACTIVITY : performs
+  TASKS ||--o{ TASK_ACTIVITY : defines
+  USERS ||--o{ REWARD_DECISIONS : receives
+  TASK_ACTIVITY ||--o{ REWARD_DECISIONS : may_trigger
+  USERS ||--o{ WALLET_TRANSACTIONS : owns
+  REWARD_DECISIONS ||--o{ WALLET_TRANSACTIONS : may_post
+  USERS ||--o{ WITHDRAWAL_REQUESTS : submits
+  WITHDRAWAL_REQUESTS ||--o{ PROVIDER_ATTEMPTS : has
+  USERS ||--o{ REFERRAL_MILESTONES : participates
+  REFERRALS ||--o{ REFERRAL_MILESTONES : records
+  USERS ||--o{ FEATURE_EVENTS : generates
+  USERS { string user_id PK }
+  TASKS { string task_id PK }
+  TASK_ACTIVITY { string activity_id PK string user_id FK string task_id FK }
+  REWARD_DECISIONS { string reward_decision_id PK string user_id FK }
+  WALLET_TRANSACTIONS { string transaction_id PK string user_id FK string unit string idempotency_key }
+  WITHDRAWAL_REQUESTS { string withdrawal_id PK string user_id FK }
+  PROVIDER_ATTEMPTS { string attempt_id PK string withdrawal_id FK }
+  REFERRALS { string referral_id PK }
+  REFERRAL_MILESTONES { string milestone_id PK string referral_id FK string user_id FK }
+  FEATURE_EVENTS { string event_id PK string user_id FK }
+```
+
+[Open raw Mermaid source](../diagrams/LOGICAL_MODEL.mmd).
