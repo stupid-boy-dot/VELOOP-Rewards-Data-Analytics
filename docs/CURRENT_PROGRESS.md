@@ -17,7 +17,7 @@
 - VELOOP reviewer must re-evaluate and confirm acceptance or request changes.
 - Product, Engineering, Finance, Operations and Privacy owners must approve feature status, event contracts, unit conversion, ledger rules, referral qualification, withdrawal states, retention and privacy controls before implementation.
 - Wireframes remain design specifications until source tables, event telemetry, reconciled metrics and access controls exist.
-- Formatted PDF/XLSX/PPTX binaries are in the source-safe review archive but are not yet attached to the GitHub release.
+- A 52-file public source bundle (Markdown, CSV, HTML, Mermaid and Python) is now attached to the GitHub release, and README navigation maps all 21 deliverables to public source files. The formatted PDF/XLSX/PPTX binaries remain in the separate handover ZIP and are not attached to the release.
 
 ## Integrity boundary
 
