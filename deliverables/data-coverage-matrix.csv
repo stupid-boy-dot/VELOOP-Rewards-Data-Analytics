@@ -1,0 +1,23 @@
+Domain,Requirement,Task 01 Evidence,Coverage Status,Finding or Limitation
+User identity,Stable identifier,user_id,Available,1,000 unique non-null IDs in clean sheet
+Registration,Registration timestamp,registration_datetime,Available with caveat,All 1,000 parse; derived days-since-registration has four negative values
+Acquisition,Acquisition source,acquisition_source,Available,Top-level source present for all clean rows
+Account,Account status,account_status,Available,Point-in-time snapshot only
+Verification,Email verification,email_verified,Available,855 of 1,000 verified
+Onboarding,Onboarding completion,onboarding_completed,Available with caveat,722 of 1,000 marked complete; no step timestamps
+Engagement,Active 7-day flag,active_7d,Available with caveat,Snapshot flag only; not event-derived DAU or WAU
+Engagement,Active 30-day flag,active_30d,Available with caveat,Snapshot flag only; not event-derived MAU or retention
+Login,Last login timestamp,last_login_datetime,Available with caveat,72 null values; timestamp coverage incomplete
+Consent,Consent accepted,consent_accepted,Available,923 of 1,000 accepted
+Marketing,Marketing opt-in,marketing_opt_in,Available,442 of 1,000 opted in; purpose and lawful basis need owner review
+Device,Device and platform,device_type and platform,Available,Snapshot attributes only
+Geography,Country state and city,country state city,Available with caveat,Snapshot only; verify source dictionary field definitions
+Tasks,Task activity history,None,Not available,No task starts completions failures or event timestamps
+Features,Feature event history,None,Not available,No event telemetry or feature exposure history
+Rewards,Reward ledger,None,Not available,No reward issuance credit approval or reversal facts
+Wallet,Wallet transactions,None,Not available,No wallet ledger or balance movement history
+Withdrawals,Withdrawal requests and settlement,None,Not available,No request status or payout settlement records
+Referrals,Referrer referee relationships,None,Not available,Referral acquisition source does not establish conversion
+Support,Support tickets and disputes,None,Not available,No support ticket or dispute facts
+Providers,Provider callbacks,None,Not available,No callback payloads IDs or retry history
+Data quality,Messy QA fixture,Users_Messy_Audit,Available for QA only,1,008 rows and 8 excess duplicate rows across 8 IDs; exclude from KPI base
