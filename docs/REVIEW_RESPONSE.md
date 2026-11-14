@@ -4,14 +4,14 @@
 
 | Reviewer requirement | Revision 4 response | Evidence |
 |---|---|---|
-| Publish actual deliverables | Source-safe package contains formatted reports, editable workbooks, seven-page dashboard wireframes, ERD, presentation and reproducible aggregate evidence. | Review archive; README reviewer route |
+| Publish actual deliverables | Public repository exposes Markdown/CSV/HTML/Mermaid/Python source evidence and a downloadable 52-file source bundle. Formatted PDF/XLSX/PPTX handover binaries are not yet attached to the GitHub release. | [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md); [source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip) |
 | Complete repository and direct README links | Reviewer navigation now includes calculation evidence, product-source review, 21-item inventory and package QA. | README.md; index.html |
 | Seven dashboards and explanations | Seven wireframe pages; 39 visual-level specifications in a row-level CSV and dedicated Master Blueprint tab. The 10-row Dashboard Blueprint sheet is a summary only. | dashboard-wireframes.html; Dashboard Design Specifications; detailed CSV; workbook tab |
 | Calculations and reproducibility | Numerators, denominators, formulas, aggregate outputs and a standard-library Python reproduction script are included. | analysis folder; reproducibility guide; reproducible workbook |
 | Event plan and developer handoff | 35 proposed event definitions and handoff requirements cover triggers, payloads, field types, validation, deduplication, timestamps and acceptance tests. | event tracking CSV; developer handoff |
 | VELOOP implementation strategy | Phased source-to-dashboard playbook covers ownership, ingestion, validation, quarantine, curated models, semantic KPIs, BI rollout and release gates. | Analytics implementation playbook |
 | Official product information | Official public pages are classified as published claims/guidance; the product crosswalk separates these from verified implementation. | Public Product Source Review; source crosswalk |
-| Independent reviewer access | Repository exposes structured schedules and public-safe evidence; formatted binaries are available in the review archive. Release-asset attachment remains a separate publication step. | Public repository; review archive |
+| Independent reviewer access | The README now links directly to the 21-deliverable access guide, evidence files, rendered ER diagram and source bundle. The formatted PDF/XLSX/PPTX archive remains separate and is not currently hosted as a GitHub binary asset. | README.md; [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md); [source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip) |
 
 ## Corrections from re-audit
 
@@ -24,3 +24,8 @@
 ## Evidence boundaries
 
 All Task 01 records and calculations are simulated/fictional. The messy sheet is a QA fixture, not a KPI population. The approved source does not contain reward, wallet, withdrawal, task-event or referral relationship histories. Public web pages do not prove production implementation or instrumentation. Proposed designs require owner approval. Final acceptance remains with VELOOP.
+
+
+## Public-access clarification
+
+The current GitHub release asset is a 52-file source bundle of the repository's published Markdown, CSV, HTML, Mermaid and Python files. It is **not** the formatted PDF/XLSX/PPTX handover archive. The original row-level source workbook is excluded from public hosting for privacy. The reviewer access guide identifies each deliverable's public evidence and the exact format boundary.
