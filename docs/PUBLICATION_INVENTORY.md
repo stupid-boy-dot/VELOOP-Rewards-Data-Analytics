@@ -1,36 +1,35 @@
 # Publication Inventory — 21 Final Deliverables
 
-This navigation maps the 21 Task 01 deliverables to the source-safe review archive. The original Task 01 row-level workbook is excluded because it contains identifiers; use the authorised assignment copy as the reproduction source.
+This page maps each required deliverable to files that are directly accessible in the public GitHub repository. It distinguishes the public source representation from the formatted PDF/XLSX/PPTX handover files, which are not currently attached to the GitHub release.
 
-| # | Deliverable | Evidence in archive |
+For the reviewer-ready route, use the [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md). A downloadable 52-file [public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip) is attached to the release.
+
+| # | Required deliverable | Direct public evidence |
 |---:|---|---|
-| 01 | Executive Summary | 01_Start_Here/Executive Summary.pdf |
-| 02 | Product Data Audit | 02_Reports_PDF/Product Data Readiness Audit.pdf; Master Blueprint Product Data Audit tab |
-| 03 | Data Coverage Matrix | 03_Excel_Workbooks/Data Coverage and Gap Matrix.xlsx; 02_Reports_PDF/Data Coverage and Gap Assessment.pdf |
-| 04 | User and Account Analytics | 02_Reports_PDF/User and Account Analytics Specification.pdf; User and Account Analytics Workbook.xlsx |
-| 05 | Earning and Reward Analytics | 02_Reports_PDF/Earning and Reward Analytics Specification.pdf; Master Blueprint Earning Reward Spec tab |
-| 06 | Wallet and Withdrawal Analytics | 02_Reports_PDF/Wallet and Withdrawal Analytics Specification.pdf; Master Blueprint Wallet Withdrawal Spec tab |
-| 07 | Referral and Engagement Analytics | 02_Reports_PDF/Referral and Engagement Analytics Specification.pdf; Master Blueprint Referral Engagement Spec tab |
-| 08 | Event Tracking Plan | 02_Reports_PDF/Production Event Tracking Plan.pdf; event-tracking-plan.csv; Master Blueprint Event Tracking Plan tab |
-| 09 | Data Dictionary | 02_Reports_PDF/Analytics Data Dictionary.pdf; data-dictionary.csv; Master Blueprint Data Dictionary tab |
-| 10 | Logical Data Model / ERD | 05_Visuals_and_Technical_Assets/Logical Data Model ERD.png; diagrams/LOGICAL_MODEL.mmd |
-| 11 | KPI Catalogue | kpi-catalogue.csv; Master Blueprint KPI Catalogue tab |
-| 12 | Data Profiling | User Dataset Audit and Analysis - Public Safe.xlsx; reproducible analysis workbook, guide and aggregate CSVs |
-| 13 | Data Quality Audit | 02_Reports_PDF/Product Data Readiness Audit.pdf; public-safe profiling workbook; quality issue register |
-| 14 | Dashboard Blueprint | Dashboard Wireframes.pdf (7 pages); dashboard design explanations PDF; 39-row visual specifications CSV and Master Blueprint tab |
-| 15 | Developer Handoff | 02_Reports_PDF/Developer Analytics Handoff.pdf; developer-handoff.csv; Master Blueprint Developer Handoff tab |
-| 16 | Data Pipeline and Operating Model | 02_Reports_PDF/Data Pipeline and Operating Model.pdf; pipeline diagram; pipeline proposal tab |
-| 17 | Privacy, Access and Governance | 02_Reports_PDF/Privacy Access and Governance Proposal.pdf; Privacy Governance tab |
-| 18 | Readiness / Gap Assessment | 02_Reports_PDF/Analytics Readiness Assessment.pdf; Readiness Scorecard and Gap Assessment tabs |
-| 19 | Assumption and Verification Register | 02_Reports_PDF/Assumption and Verification Register.pdf; Assumption Register tab |
-| 20 | Prioritised Implementation Backlog | 02_Reports_PDF/Prioritised Implementation Backlog.pdf; implementation-backlog.csv; backlog tab |
-| 21 | Final Consolidated Report | 01_Start_Here/Final Consolidated Report.pdf |
+| 01 | Executive Summary | [Executive summary](../deliverables/executive-summary.md) |
+| 02 | Product Data Audit | [Audit report](../deliverables/product-data-readiness-audit.md) · [Audit schedule](../deliverables/product-data-audit.csv) |
+| 03 | Data Coverage Matrix | [Coverage matrix](../deliverables/data-coverage-matrix.csv) · [Gap assessment](../deliverables/gap-assessment.csv) |
+| 04 | User and Account Analytics | [Data dictionary](../deliverables/data-dictionary.csv) · [Observed metrics](../analysis/observed_metrics.csv) · [Coverage matrix](../deliverables/data-coverage-matrix.csv) |
+| 05 | Earning and Reward Analytics | [Earning/reward specification](../deliverables/earning-reward-spec.csv) |
+| 06 | Wallet and Withdrawal Analytics | [Wallet/withdrawal specification](../deliverables/wallet-withdrawal-spec.csv) |
+| 07 | Referral and Engagement Analytics | [Referral/engagement specification](../deliverables/referral-engagement-spec.csv) |
+| 08 | Event Tracking Plan | [Event tracking plan](../deliverables/event-tracking-plan.csv) · [Event classification](../deliverables/event-classification-guide.csv) |
+| 09 | Data Dictionary | [Data dictionary](../deliverables/data-dictionary.csv) |
+| 10 | Logical Data Model / ERD | [Rendered ERD](LOGICAL_DATA_MODEL.md) · [Mermaid source](../diagrams/LOGICAL_MODEL.mmd) |
+| 11 | KPI Catalogue | [KPI catalogue](../deliverables/kpi-catalogue.csv) |
+| 12 | Simulated Data Profiling | [Observed metrics](../analysis/observed_metrics.csv) · [Onboarding breakdown](../analysis/onboarding_by_acquisition_source.csv) · [QA counts](../analysis/messy_audit_quality_counts.csv) · [Reproduction script](../analysis/reproduce_metrics.py) · [Reproducibility guide](REPRODUCIBILITY.md) |
+| 13 | Data Quality Audit | [Data quality issue register](../deliverables/data-quality-issue-register.csv) · [Quality controls](../deliverables/quality-control-framework.csv) · [QA counts](../analysis/messy_audit_quality_counts.csv) |
+| 14 | Dashboard Blueprint | [Seven dashboard wireframes](../dashboard-wireframes.html) · [39 visual specifications](../deliverables/dashboard-visual-specifications.csv) · [Design explanations](DASHBOARD_DESIGN_SPECIFICATIONS.md) |
+| 15 | Developer Analytics Handoff | [Developer handoff](../deliverables/developer-handoff.md) · [Event tracking plan](../deliverables/event-tracking-plan.csv) |
+| 16 | Data Pipeline and Operating Model | [Implementation playbook](ANALYTICS_IMPLEMENTATION_PLAYBOOK.md) · [Pipeline proposal](../deliverables/pipeline-proposal.csv) |
+| 17 | Privacy, Access and Governance | [Privacy/governance schedule](../deliverables/privacy-governance.csv) · [Third-party dependency controls](../deliverables/third-party-dependency-controls.csv) |
+| 18 | Analytics Readiness Assessment | [Readiness scorecard](../deliverables/readiness-scorecard.csv) · [Gap assessment](../deliverables/gap-assessment.csv) |
+| 19 | Assumption and Verification Register | [Assumption register](../deliverables/assumption-register.csv) · [Source verification register](../deliverables/source-verification-register.csv) |
+| 20 | Prioritised Implementation Backlog | [Implementation backlog](../deliverables/implementation-backlog.csv) |
+| 21 | Final Consolidated Report | [Final consolidated report](../deliverables/final-consolidated-report.md) |
 
-## Supporting evidence
-- Public product-source review: Revision_2/PDF/VELOOP_Task01_Public_Product_Source_Review_v01.pdf and docs/PUBLIC_PRODUCT_SOURCE_REVIEW.md.
-- 16-area source crosswalk: deliverables/product-source-crosswalk.csv.
-- Reproducibility: Revision_2/PDF/VELOOP_Task01_Reproducibility_Guide_v02.pdf and analysis folder.
-- Implementation path: Revision_2/PDF/VELOOP_Task01_Analytics_Implementation_Playbook_v02.pdf.
-- Package QA: docs/PACKAGE_QA_REPORT.md.
+## Format boundary
 
-The project 84-field dictionary includes all 27 observed Task 01 user fields plus proposed fields. The original source workbook's Data_Dictionary sheet has 25 documented entries; the two-field gap (platform and country) remains open for owner validation.
+The public repository and source bundle expose the analytical source files in Markdown, CSV, HTML, Mermaid and Python formats. The separate formatted PDF reports, Excel workbooks and PowerPoint deck are **not currently attached as GitHub release assets**. The original row-level Task 01 source workbook is excluded from public hosting because it contains identifiers; use the authorised assignment copy for local reproduction.
+
+All Task 01 values are simulated/fictional. Proposed events, dashboards, pipelines and controls are designs requiring owner approval; they are not proof of production implementation.
