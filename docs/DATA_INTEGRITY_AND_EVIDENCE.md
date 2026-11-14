@@ -1,35 +1,22 @@
-# Data Integrity & Evidence Policy
+# Data Integrity and Evidence Policy
 
-## Mandatory source rule
+## Evidence labels
+- **Source-observed:** directly present in the approved Task 01 workbook or an official public page.
+- **Calculated:** reproducible aggregate derived from the approved Task 01 workbook; it inherits that workbook's simulated/fictional status.
+- **Proposed:** recommended KPI, event, schema, rule, architecture, dashboard or control not proven to exist in production.
+- **To Be Verified:** detail requiring confirmation from the accountable VELOOP owner or technical source.
 
-The supplied Task 01 assignment states that the dataset is fictional/simulated. It must never be described as actual VELOOP users, earnings, withdrawals, revenue, retention, conversion rates, performance or company statistics.
+## Non-negotiable scope
+Only the Admin-approved Task 01 dataset is used for observed profiling. The Users_Messy_Audit sheet is a QA fixture, not an analytical population. Do not join unrelated simulated workbooks or invent missing operational events, wallet/reward transactions or referral records.
 
-## Evidence classifications
+## Privacy boundary
+The original Task 01 source workbook contains row-level identifiers and is excluded from public hosting and the public-safe review archive. A redacted/public-safe audit workbook and aggregate outputs are included. Use the authorised assignment copy for local reproduction.
 
-| Classification | Meaning |
-|---|---|
-| Source-observed | Directly present in the supplied workbook or assignment text |
-| Calculated | Reproducibly calculated from the supplied simulated records |
-| Proposed | Recommended analytics requirement, event, schema, metric, control or design |
-| To Be Verified | Product or implementation detail that the available evidence does not confirm |
+## KPI interpretation
+Supplied active_7d and active_30d flags are snapshot flags, not event-derived DAU/MAU or retention. Referral acquisition does not equal referral conversion. Snapshot onboarding status does not provide step-level funnel timestamps. Four negative days_since_registration observations require as-of/timezone validation.
 
-## Handling unknowns
+## Product-source boundary
+Official VELOOP public pages substantiate published descriptions and policy statements only. They do not verify production capability, provider availability, data capture, backend state transitions, analytics implementation, SLAs or live performance. Future Features previews must not be modelled as current features until approved for launch.
 
-Important product facts must be recorded with the information found, source, source type, date checked, status and limitations. Assumptions must not silently become facts.
-
-Example: a session identifier may be proposed because it enables session-level analysis, but the current implementation status requires engineering verification.
-
-## Privacy and publication
-
-The public repository excludes the original user-level workbook because it contains name/email-style columns. Those fields are in a fictional dataset, but excluding them is a prudent public-publication control. Aggregate findings and documented methodology may be published with the simulated-data caveat.
-
-Do not publish passwords, API keys, tokens, authentication secrets, payment credentials or private security controls.
-
-## Interpretation controls
-
-- A registration is not automatically a successful referral conversion.
-- An earning activity is not proof that a reward was credited.
-- A withdrawal request is not proof of a successful payout.
-- Current XP/balance snapshots do not provide complete transaction histories.
-- Snapshot activity flags do not substitute for event-level daily activity records.
-- A designed dashboard is not a deployed production dashboard.
+## Release and approval
+All proposed analytics specifications require Product, Engineering, Finance, Operations and Privacy/Legal review. The initial evaluator result was 65% and not approved. This package does not claim VELOOP acceptance.
