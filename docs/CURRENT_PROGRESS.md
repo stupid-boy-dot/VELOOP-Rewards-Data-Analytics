@@ -1,36 +1,24 @@
-# Current Progress — Review Revision 2
+# Current Progress — Task 01 Revision 4
 
-**Status:** Revision 2 prepared for re-review; initial evaluation 65%, not approved. VELOOP acceptance remains pending.  
-**Last updated:** 2026-11-13
+**Status:** Revision 4 prepared for a fresh review. **Initial evaluation:** 65%; **approval:** not approved. **Last checked:** 14 November 2026.
 
-## Changes made against the review
+## Corrections completed
 
-- Created a review response mapping each requested improvement to its evidence.
-- Added a reproducible aggregate analysis workbook with formula-driven ratios, numerators, denominators, QA counts and caveats.
-- Ran the reproduction script against the exact `Users_1000_Clean` and `Users_Messy_Audit` sheets from the supplied ZIP; the script output matched the workbook values.
-- Added the reproducibility guide and aggregate CSV evidence.
-- Added explanations for all seven dashboard wireframes and a 39-visual dashboard specification report.
-- Added a phased analytics implementation playbook, including source-to-dashboard gates, data contracts, quality controls, roles and rollout evidence.
-- Created a public-safe profiling workbook: the raw row-level snapshot sheet was removed and name/email/identifier examples were redacted.
+- Added official VELOOP homepage, Help Center, withdrawal, Level System, Disclaimer and Privacy Policy evidence to the source register. Public documentation is not treated as implementation evidence.
+- Added a 16-area product/source crosswalk with explicit publication status and implementation status. Future Features previews are not treated as current-state capabilities.
+- Reconciled dashboard detail: 39 visual-level specifications now exist as a row-level CSV and a dedicated Master Blueprint worksheet; the 10-row Dashboard Blueprint tab is a high-level summary.
+- Reconciled dictionary detail: the 84-field project dictionary includes all 27 observed Task 01 source fields, including platform and country, plus proposed fields. The original source workbook's Data_Dictionary sheet has 25 documented entries; the two-field documentation gap remains open for owner validation.
+- Updated the 21-item requirements tracker with exact deliverable paths in the public-safe archive.
+- Corrected the Read Me First statement: the original row-level source workbook is excluded from the public-safe archive because it contains identifiers.
+- Master Blueprint is version v05 with 28 worksheets, including Public Product Evidence and Dashboard Visual Specifications.
 
-## Existing deliverables retained
+## Remaining gates
 
-The original prepared package still contains the 21-deliverable set, the 7-page dashboard wireframe PDF, the proposed logical ERD, a detailed 35-event tracking plan and developer handoff. The revised package adds the review response, analysis workbook and expanded explanatory material.
+- VELOOP reviewer must re-evaluate and confirm acceptance or request changes.
+- Product, Engineering, Finance, Operations and Privacy owners must approve feature status, event contracts, unit conversion, ledger rules, referral qualification, withdrawal states, retention and privacy controls before implementation.
+- Wireframes remain design specifications until source tables, event telemetry, reconciled metrics and access controls exist.
+- Formatted PDF/XLSX/PPTX binaries are in the source-safe review archive but are not yet attached to the GitHub release.
 
-## Public publication
+## Integrity boundary
 
-- Public GitHub repository: https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics
-- GitHub Pages showcase: https://stupid-boy-dot.github.io/VELOOP-Rewards-Data-Analytics/
-- Repository now includes the direct reviewer index, aggregate calculations, reproducibility script, event/KPI/data dictionary schedules, dashboard design descriptions and implementation playbook.
-- The original row-level source workbook and raw profiling snapshot remain excluded from public hosting.
-
-## Remaining external dependency
-
-- Submit the updated public repository and the full formatted PDF/XLSX review package to VELOOP through its specified channel.
-- Await reviewer feedback and make any requested changes.
-- Obtain explicit Task 01 approval; the current score/review is not an approval.
-- Production event instrumentation, pipelines, privacy controls and interactive dashboards remain proposed and unverified.
-
-## Evidence boundary
-
-The current evidence proves reproducible calculations against the supplied simulated workbook and documented analytical designs. It does not prove any VELOOP production instrumentation, live transactional source, data infrastructure or deployed analytics dashboard.
+Task 01 values are simulated/fictional. Official public pages substantiate published descriptions only, not current feature availability, backend implementation, event coverage or operational performance. Final acceptance remains with VELOOP.
