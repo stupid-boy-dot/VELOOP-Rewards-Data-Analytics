@@ -1,0 +1,40 @@
+Visual ID,Dashboard,Visual Title,Metric,Source,Visualization,Decision Supported,Readiness Limitation
+VIS-001,Executive Overview,Registration trend,Distinct users by registration date,Users,Line plus KPI,Adjust acquisition focus,Simulated source only
+VIS-002,Executive Overview,Active users,DAU WAU MAU,Feature Events and Task Activity,Line,Prioritise activation and retention,Qualifying event and timezone require sign-off
+VIS-003,Executive Overview,Task funnel,Validated completions divided by eligible starts,Task Activity,Funnel,Investigate activity drop-off,Not present in approved Task 01 source
+VIS-004,Executive Overview,Reward status mix,Reward count and value by status and unit,Rewards,Stacked columns,Review reward processing,No reward ledger in Task 01
+VIS-005,Executive Overview,Wallet movements,Posted credits redemptions and reversals,Wallet,Stacked trend,Review ledger activity,No wallet ledger in Task 01
+VIS-006,Executive Overview,Withdrawal outcomes,Requests by current or final status,Withdrawals,Stacked bar and cards,Identify queue bottlenecks,No withdrawal records in Task 01
+VIS-007,Executive Overview,Referral funnel,Referrals created through conversion,Referrals,Funnel,Improve referral journey,Conversion definition and maturity window require approval
+VIS-008,User Analytics,Registration trend,Distinct users by registration date,Users,Line chart,Adjust acquisition strategy,Simulated source only
+VIS-009,User Analytics,Acquisition mix,Registrations by source and channel share,Users,Horizontal bar,Prioritise channel analysis,No spend data for CAC or ROI
+VIS-010,User Analytics,Account status,Distinct users by account status,Users,Stacked bar or donut,Investigate lifecycle mix,Snapshot only with no transition history
+VIS-011,User Analytics,Onboarding completion,Completed onboarding divided by eligible cohort,Users and lifecycle events,KPI and cohort bar,Improve onboarding journey,Snapshot lacks milestone timestamps
+VIS-012,User Analytics,Returning users,Active users in current and prior comparable period,Feature Events and Task Activity,Cohort heatmap,Target retention interventions,Requires complete event history
+VIS-013,User Analytics,Device and geography,Users by device city state and country,Users,Bar chart or map,Guide device QA and regional support,Simulated snapshot only
+VIS-014,User Analytics,Lifecycle funnel,Registration through verification onboarding and active,User lifecycle events,Funnel,Prioritise lifecycle improvements,Requires milestone event timestamps
+VIS-015,Engagement,Feature usage,Distinct feature users and event count,Feature Events,Bar plus trend,Prioritise feature investment,Production event coverage unverified
+VIS-016,Engagement,Starts and completions,Task starts and completions,Task Activity,Line plus KPI cards,Monitor task operations,No task activity fact table in Task 01
+VIS-017,Engagement,Completion rate,Validated completions divided by eligible starts,Task Activity,Line plus segmented bar,Investigate friction and provider issues,Denominator and cohort rules need approval
+VIS-018,Engagement,Failure reasons,Failed activities by canonical failure category,Task Activity and failure taxonomy,Stacked bar,Route investigation to owner,Failure code mapping is proposed
+VIS-019,Engagement,Repeat feature use,Users with at least two qualifying uses,Feature Events,Histogram plus cohort,Assess feature stickiness,Needs stable event IDs and inclusion policy
+VIS-020,Engagement,Daily active users,Distinct users with qualifying activity per day,Feature Events and Task Activity,Line chart,Monitor engagement movement,Qualifying event list and timezone need sign-off
+VIS-021,Rewards,Reward status mix,Reward count and amount by status and unit,Rewards,Stacked column and table,Review pending and credited amounts,Approval is not wallet credit
+VIS-022,Rewards,Reward by feature,Reward count and amount by linked task feature,Rewards and Task Activity,Stacked bar,Evaluate reward mechanics,Requires reliable reward-to-task linkage
+VIS-023,Rewards,Credited reward trend,Posted reward amount by credited date and unit,Rewards and Wallet,Line chart,Review reward liability and reconciliation,Credited timestamp alone may not prove posting
+VIS-024,Rewards,Reward reversals,Reversal count and amount linked to original reward,Rewards,Column and detail table,Review eligibility and credit errors,Requires original reward link and reason taxonomy
+VIS-025,Rewards,Pending reward ageing,Pending count value and age,Rewards,Ageing bars and table,Prioritise operations,Age bands and SLA thresholds need approval
+VIS-026,Wallet,Transaction mix,Distinct wallet transactions by type and status,Wallet,Stacked bar,Review transaction mix,Status and type semantics require confirmation
+VIS-027,Wallet,Posted credits,Sum of posted credit entries by unit,Wallet,KPI cards and line,Monitor credit volume,Use posted entries only and keep units separate
+VIS-028,Wallet,Redemption activity,Posted redemption count and amount by unit,Wallet,Column chart,Review redemption usage,Redemption types and posting semantics need confirmation
+VIS-029,Wallet,Wallet reversals,Reversal count and amount referencing original transaction,Wallet,Column and linked detail,Investigate posting errors,Requires explicit transaction reference and reason
+VIS-030,Wallet,Closing balance,Latest valid balance after per user and unit,Wallet,Area or line,Support financial operations,Requires ledger ordering and balance semantics validation
+VIS-031,Withdrawals,Request trend,Distinct withdrawal requests by requested date,Withdrawals,Line chart,Plan operations,No withdrawal records in Task 01
+VIS-032,Withdrawals,Status mix,Distinct withdrawals by status,Withdrawals,Stacked bar,Identify backlog and failure mix,No status history in Task 01
+VIS-033,Withdrawals,Processing duration,Median and P90 from request to processing,Withdrawals and attempts,Box plot and KPI cards,Find slow providers or methods,Final settlement timestamps may be absent
+VIS-034,Withdrawals,Payout method mix,Withdrawal requests by payout method,Withdrawals,Horizontal bar,Plan provider coverage,No withdrawal records in Task 01
+VIS-035,Withdrawals,Requested versus completed,Requested and completed amount trends by their own date basis,Withdrawals,Dual line,Review capacity and backlog,Keep date basis and currency units separate
+VIS-036,Referrals,Referral creation,Distinct referrals by created date,Referrals,Line chart,Review programme reach,No referral relationship records in Task 01
+VIS-037,Referrals,Referral lifecycle,Created registered activated converted,Referrals and Users,Funnel,Improve referral journey,Registration is not conversion
+VIS-038,Referrals,Activation rate,Activated referrals divided by registered referrals,Referrals and activity,KPI and cohort bar,Optimise referral quality,Activation rule and window need sign-off
+VIS-039,Referrals,Conversion rate,Converted referrals divided by eligible cohort,Referrals and reward linkage,Line and cohort table,Evaluate referral programme,Do not equate registration with conversion
