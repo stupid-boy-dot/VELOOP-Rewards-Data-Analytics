@@ -1,6 +1,6 @@
 # Package QA Report — Task 01 Revision 4
 
-**Review date:** 14 November 2026  
+**Review date:** 15 November 2026  
 **Initial result:** 65%; not approved. This report records internal package QA, not reviewer acceptance.
 
 ## Checks
@@ -14,6 +14,8 @@
 - Workbook scan found no common formula-error tokens in the scanned ranges.
 - Final archive: 90 files, 88 manifested files (excluding the manifest workbook and SHA-256 manifest), no duplicate paths, ZIP integrity test passed.
 - Original row-level source workbook is absent from the public-safe archive.
+- Public repository includes six sanitised profile-sheet CSV exports; personal identifiers are redacted from example-value cells.
+- Public GitHub release includes `VELOOP_Task01_Public_Source_Bundle_Revision4_2.zip` (67 files); ZIP download, integrity, and required reviewer-document/profile-CSV paths verified.
 
 ## Scope limitations
 Task 01 supplies only user/account snapshot records and a messy QA fixture. It does not contain activity, reward, wallet, withdrawal, referral relationship or feature-event facts. Those domains are proposed specifications; no substitute records were invented. All Task 01 values are simulated/fictional.
