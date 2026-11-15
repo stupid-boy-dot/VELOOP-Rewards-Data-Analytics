@@ -1,6 +1,6 @@
 # Current Progress — Task 01 Revision 4
 
-**Status:** Revision 4 prepared for a fresh review. **Initial evaluation:** 65%; **approval:** not approved. **Last checked:** 14 November 2026.
+**Status:** Revision 4 prepared for a fresh review. **Initial evaluation:** 65%; **approval:** not approved. **Last checked:** 15 November 2026.
 
 ## Corrections completed
 
@@ -17,7 +17,7 @@
 - VELOOP reviewer must re-evaluate and confirm acceptance or request changes.
 - Product, Engineering, Finance, Operations and Privacy owners must approve feature status, event contracts, unit conversion, ledger rules, referral qualification, withdrawal states, retention and privacy controls before implementation.
 - Wireframes remain design specifications until source tables, event telemetry, reconciled metrics and access controls exist.
-- A 52-file public source bundle (Markdown, CSV, HTML, Mermaid and Python) is now attached to the GitHub release, and README navigation maps all 21 deliverables to public source files. The formatted PDF/XLSX/PPTX binaries remain in the separate handover ZIP and are not attached to the release.
+- A 67-file public source bundle (Markdown, CSV, HTML, Mermaid and Python) is attached to the GitHub release. README, Reviewer Access Guide and the live showcase link directly to the 21 deliverables and the latest bundle. Six public-safe profiling CSVs are directly accessible in the repository. The formatted PDF/full XLSX/PPTX handover binaries remain in the separate source-safe ZIP and are not attached to the release.
 
 ## Integrity boundary
 
