@@ -40,9 +40,9 @@
 
 ## Downloadable source bundle
 
-[Download Revision 4 public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip)
+[Download Revision 4.2 public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4_2.zip)
 
-The ZIP contains the 52 public repository source files used for independent inspection: Markdown reports, CSV schedules and evidence, HTML wireframes, Mermaid model source, Python reproduction code, README and site files.
+The ZIP contains the 67 public repository source files used for independent inspection: Markdown reports, CSV schedules and evidence, HTML wireframes, Mermaid model source, Python reproduction code, README and site files.
 
 ## Important format and privacy note
 
