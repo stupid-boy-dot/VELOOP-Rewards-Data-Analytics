@@ -1,0 +1,11 @@
+﻿VELOOP TASK 01 — USER DATASET AUDIT & ANALYSIS,
+Scope,Use only the Admin-designated Task 01 workbook: VELoop_Rewards_Data_01 (1)(1).xlsx
+Primary analysis source,"Users_1000_Clean (1,000 rows × 27 columns)"
+Audit-only source,"Users_Messy_Audit (1,008 rows × 28 columns); used to assess data defects, not as the analytical population."
+Dataset status,SIMULATED / FICTIONAL / ANALYTICAL WORK ONLY — not actual VELOOP production data.
+Period,01 Apr 2026–15 Sep 2026 (as stated in source README).
+Admin direction,Use the Task 01 dataset. No other workbook is included in this analysis.
+Interpretation rule,Treat supplied summary values and derived flags as source-provided; do not infer live product performance or causal relationships.
+Important caveat,"Four negative days_since_registration values and two undocumented fields (platform, country) require documentation/derivation review."
+Public-copy controls,"Row-level snapshot excluded; names, email addresses, and direct identifiers are not present in this public-safe workbook."
+Use with reproducibility,Use the original assignment workbook held separately by the reviewer to reproduce row-level checks locally.
