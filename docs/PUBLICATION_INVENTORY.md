@@ -2,7 +2,7 @@
 
 This page maps each required deliverable to files that are directly accessible in the public GitHub repository. It distinguishes the public source representation from the formatted PDF/XLSX/PPTX handover files, which are not currently attached to the GitHub release.
 
-For the reviewer-ready route, use the [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md). A downloadable 52-file [public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip) is attached to the release.
+For the reviewer-ready route, use the [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md). A downloadable 52-file [public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4_2.zip) is attached to the release.
 
 | # | Required deliverable | Direct public evidence |
 |---:|---|---|
