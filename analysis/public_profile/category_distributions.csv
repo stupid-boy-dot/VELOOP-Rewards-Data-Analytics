@@ -1,0 +1,49 @@
+﻿Field,Value,Count,Share
+gender,Male,343,0.343
+gender,Female,331,0.331
+gender,Prefer not to say,326,0.326
+state,Kerala,129,0.129
+state,Uttar Pradesh,122,0.122
+state,Bihar,92,0.092
+state,Odisha,83,0.083
+state,Maharashtra,67,0.067
+state,Telangana,63,0.063
+state,Karnataka,63,0.063
+state,West Bengal,56,0.056
+state,Gujarat,49,0.049
+state,Punjab,48,0.048
+state,Jharkhand,46,0.046
+state,Delhi,38,0.038
+state,Assam,36,0.036
+state,Tamil Nadu,34,0.034
+state,Haryana,32,0.032
+state,Madhya Pradesh,25,0.025
+state,Rajasthan,17,0.017
+acquisition_source,Organic Search,244,0.244
+acquisition_source,Direct,217,0.217
+acquisition_source,Social Media,160,0.16
+acquisition_source,Referral,119,0.119
+acquisition_source,WhatsApp,103,0.103
+acquisition_source,Other,102,0.102
+acquisition_source,Telegram,55,0.055
+primary_device,Android,659,0.659
+primary_device,Windows,155,0.155
+primary_device,iOS,140,0.14
+primary_device,macOS,46,0.046
+account_status,Active,568,0.568
+account_status,Inactive,283,0.283
+account_status,Suspended,77,0.077
+account_status,Pending Verification,72,0.072
+email_verification_status,Verified,855,0.855
+email_verification_status,Pending,145,0.145
+onboarding_status,Completed,722,0.722
+onboarding_status,Started,146,0.146
+onboarding_status,Not Started,132,0.132
+consent_status,Accepted,923,0.923
+consent_status,Pending,77,0.077
+marketing_opt_in,No,558,0.558
+marketing_opt_in,Yes,442,0.442
+account_created_via,Web Registration,661,0.661
+account_created_via,Google Sign-In,339,0.339
+platform,Web,1000,1
+country,India,1000,1
