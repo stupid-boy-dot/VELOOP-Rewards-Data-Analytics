@@ -1,0 +1,28 @@
+﻿Field,Declared type,Definition,Requirement,Validation rule,Audit status
+user_id,String,Unique simulated user identifier,Required,Unique; non-null,Documented
+full_name,String,Simulated display name,Required,Non-empty,Documented
+email,String,Simulated email address,Required,Valid email format,Documented
+age,Integer,Simulated age,Required,18+ in supplied dataset,Documented
+gender,Categorical,Simulated gender,Optional,Controlled values,Documented
+state,Categorical,Simulated Indian state,Required,Controlled list,Documented
+city,Categorical,Simulated city,Required,City-state consistency,Documented
+registration_datetime,Datetime,Simulated registration timestamp,Required,Valid datetime,Documented
+acquisition_source,Categorical,Simulated acquisition source,Required,Controlled source list,Documented
+referral_source_detail,Categorical,Detail for referral acquisition,Conditional,Controlled values,Documented
+primary_device,Categorical,Simulated primary device,Required,Android/iOS/Windows/macOS,Documented
+account_status,Categorical,Simulated account state,Required,Controlled status list,Documented
+email_verification_status,Categorical,Simulated verification state,Required,Verified/Pending,Documented
+onboarding_status,Categorical,Simulated onboarding state,Required,Completed/Started/Not Started,Documented
+last_login_datetime,Datetime,Simulated latest login,Conditional,Valid and >= registration,Documented
+lifetime_sessions,Integer,Simulated session count,Required,>=0,Documented
+active_days,Integer,Simulated distinct active days,Required,<= sessions,Documented
+xp_balance,Integer,Simulated XP balance,Required,>=0,Documented
+referral_code,String,Simulated referral identifier,Required,Non-empty,Documented
+days_since_registration,Decimal,Derived days to dataset end,Derived,>=0,Documented
+is_active_7d,Categorical,Derived recent activity flag,Derived,Yes/No,Documented
+is_active_30d,Categorical,Derived 30-day activity flag,Derived,Yes/No,Documented
+consent_status,Categorical,Simulated consent state,Required,Accepted/Pending,Documented
+marketing_opt_in,Categorical,Simulated marketing preference,Required,Yes/No,Documented
+account_created_via,Categorical,Simulated registration method,Required,Web Registration/Google Sign-In,Documented
+country,object,Field present in clean dataset but not in supplied dictionary.,Not specified,Confirm definition and allowed values.,Missing from source dictionary
+platform,object,Field present in clean dataset but not in supplied dictionary.,Not specified,Confirm definition and allowed values.,Missing from source dictionary
