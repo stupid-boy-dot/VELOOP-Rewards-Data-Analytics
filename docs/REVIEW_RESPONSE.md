@@ -4,7 +4,7 @@
 
 | Reviewer requirement | Revision 4 response | Evidence |
 |---|---|---|
-| Publish actual deliverables | Public repository exposes Markdown/CSV/HTML/Mermaid/Python source evidence and a downloadable 52-file source bundle. Formatted PDF/XLSX/PPTX handover binaries are not yet attached to the GitHub release. | [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md); [source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip) |
+| Publish actual deliverables | Public repository exposes Markdown/CSV/HTML/Mermaid/Python source evidence, the six public-safe profiling sheets as direct CSVs, detailed user/account and readiness/data-quality reports, and a downloadable source bundle. The formatted PDF/full XLSX/PPTX handover binaries remain in the source-safe handover ZIP and are not attached to the GitHub release. | [Reviewer Access Guide](REVIEWER_ACCESS_GUIDE.md); [source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip) |
 | Complete repository and direct README links | Reviewer navigation now includes calculation evidence, product-source review, 21-item inventory and package QA. | README.md; index.html |
 | Seven dashboards and explanations | Seven wireframe pages; 39 visual-level specifications in a row-level CSV and dedicated Master Blueprint tab. The 10-row Dashboard Blueprint sheet is a summary only. | dashboard-wireframes.html; Dashboard Design Specifications; detailed CSV; workbook tab |
 | Calculations and reproducibility | Numerators, denominators, formulas, aggregate outputs and a standard-library Python reproduction script are included. | analysis folder; reproducibility guide; reproducible workbook |
@@ -29,3 +29,8 @@ All Task 01 records and calculations are simulated/fictional. The messy sheet is
 ## Public-access clarification
 
 The current GitHub release asset is a 52-file source bundle of the repository's published Markdown, CSV, HTML, Mermaid and Python files. It is **not** the formatted PDF/XLSX/PPTX handover archive. The original row-level source workbook is excluded from public hosting for privacy. The reviewer access guide identifies each deliverable's public evidence and the exact format boundary.
+
+
+## Additional profiling publication
+
+The public-safe profiling workbook is represented by six directly accessible CSV exports: [Read Me](../analysis/public_profile/read_me.csv), [Clean Summary](../analysis/public_profile/clean_summary.csv), [Field Profile](../analysis/public_profile/field_profile.csv), [Validation Findings](../analysis/public_profile/validation_findings.csv), [Category Distributions](../analysis/public_profile/category_distributions.csv), and [Dictionary Review](../analysis/public_profile/dictionary_review.csv). The CSVs preserve the workbook's aggregate/sanitised profiling content and exclude row-level user records. The full formatted XLSX remains in the source-safe handover ZIP; it is not represented as a public GitHub binary.
