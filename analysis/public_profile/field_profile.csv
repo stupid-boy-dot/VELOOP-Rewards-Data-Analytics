@@ -1,0 +1,28 @@
+﻿Field,Pandas type,Null count,Null %,Distinct count,Example value
+user_id,object,0,0,1000,(redacted in public copy)
+full_name,object,0,0,404,(redacted in public copy)
+email,object,0,0,1000,(redacted in public copy)
+age,int64,0,0,21,35
+gender,object,0,0,3,Male
+state,object,0,0,17,Odisha
+city,object,0,0,29,Bhubaneswar
+registration_datetime,datetime64[ns],0,0,999,2026-06-10 07:14:00
+acquisition_source,object,0,0,7,Organic Search
+referral_source_detail,object,881,0.881,1,Friend/Family
+primary_device,object,0,0,4,Android
+platform,object,0,0,1,Web
+account_status,object,0,0,4,Inactive
+email_verification_status,object,0,0,2,Verified
+onboarding_status,object,0,0,3,Completed
+last_login_datetime,datetime64[ns],72,0.072,899,2026-06-10 10:14:00
+lifetime_sessions,int64,0,0,58,8
+active_days,int64,0,0,33,8
+xp_balance,int64,0,0,450,76
+referral_code,object,0,0,1000,(redacted in public copy)
+days_since_registration,float64,0,0,754,96.7
+is_active_7d,object,0,0,2,No
+is_active_30d,object,0,0,2,No
+consent_status,object,0,0,2,Accepted
+marketing_opt_in,object,0,0,2,No
+account_created_via,object,0,0,2,Web Registration
+country,object,0,0,1,India
