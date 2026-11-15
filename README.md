@@ -19,6 +19,10 @@
 | Product/source crosswalk | [16-area crosswalk](deliverables/product-source-crosswalk.csv) |
 | 21-item publication inventory | [Publication inventory](docs/PUBLICATION_INVENTORY.md) |
 | Package-level QA | [Package QA report](docs/PACKAGE_QA_REPORT.md) |
+| User/account analytics specification | [User & account specification](deliverables/user-account-analytics-specification.md) |
+| Public-safe profiling evidence | [Read Me / scope](analysis/public_profile/read_me.csv) · [Clean dataset summary](analysis/public_profile/clean_summary.csv) · [Field-level profile](analysis/public_profile/field_profile.csv) · [Validation findings](analysis/public_profile/validation_findings.csv) · [Category distributions](analysis/public_profile/category_distributions.csv) · [Source dictionary review](analysis/public_profile/dictionary_review.csv) |
+| Analytics readiness | [Readiness assessment](deliverables/analytics-readiness-assessment.md) |
+| Data quality audit | [Data quality audit report](deliverables/data-quality-audit.md) |
 | Reproducible calculations | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
 | Numerators, denominators and formulas | [Observed metrics CSV](analysis/observed_metrics.csv) |
 | Onboarding by acquisition source | [Source breakdown CSV](analysis/onboarding_by_acquisition_source.csv) |
@@ -61,7 +65,7 @@
 
 The project covers the assignment's 21 deliverables: executive summary; product data audit; data coverage; user/account, earning/reward, wallet/withdrawal and referral/engagement specifications; event tracking; data dictionary; logical data model; KPI catalogue; simulated profiling; data quality; dashboard blueprint; developer handoff; pipeline; privacy/governance; readiness; assumptions; backlog; and consolidated report.
 
-The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The GitHub release now includes a downloadable **public source bundle** containing 52 repository files (Markdown, CSV, HTML, Mermaid and Python evidence). This is a source bundle, not the separate formatted PDF/XLSX/PPTX handover archive. Those formatted binary files are not attached to the public release at this time; see the [Reviewer Access Guide](docs/REVIEWER_ACCESS_GUIDE.md) for the exact publication boundary.
+The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The GitHub release includes a downloadable **public source bundle** of repository Markdown, CSV, HTML, Mermaid and Python evidence; the six public-safe profile CSVs and narrative analytics specifications are also directly accessible on the main branch. This is a source bundle, not the separate formatted PDF/XLSX/PPTX handover archive. Those formatted binary files are not attached to the public release at this time; see the [Reviewer Access Guide](docs/REVIEWER_ACCESS_GUIDE.md) for the exact publication boundary.
 
 ## Data integrity and scope
 
@@ -72,7 +76,7 @@ The supplied Task 01 workbook explicitly labels its records **SIMULATED / FICTIO
 - **Proposed:** events, models, KPIs, controls, architecture and dashboard specifications.
 - **To Be Verified:** production implementation and product details not evidenced by the supplied material.
 
-The original Task 01 row-level source workbook is excluded from public hosting because it contains identifiers. A public-safe profiling workbook and aggregate evidence are provided in the review package. Use the authorized assignment copy for local reproduction.
+The original Task 01 row-level source workbook is excluded from public hosting because it contains identifiers. A six-sheet public-safe profiling workbook is included in the source-safe handover ZIP. Its six sheets are also published individually as direct CSV files under `analysis/public_profile/` so a reviewer can inspect the profiling evidence in GitHub. The CSV copy redacts the example values for direct identifiers; the original row-level Task 01 source workbook remains excluded from public hosting. Use the authorised assignment copy for local reproduction.
 
 ## Dashboard / deployment boundary
 
