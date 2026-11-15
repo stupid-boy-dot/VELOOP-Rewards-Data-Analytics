@@ -1,0 +1,14 @@
+﻿Source sheet,Check,Rule / expectation,Issue count,Null / related count,Status,Finding / interpretation
+Clean sheet,Primary key,user_id unique and non-null,0,0,Pass,"1,000 rows; 1,000 distinct IDs."
+Clean sheet,Age rule,Age must be 18+,0,0,Pass,No under-18 or null ages found.
+Clean sheet,Registration timestamp,Valid datetime required,0,0,Pass,All clean-sheet registration timestamps parse.
+Clean sheet,Last login chronology,Last login must be >= registration,0,72,Pass with nulls,72 last_login_datetime values are null; no non-null last login precedes registration.
+Clean sheet,Activity counts,active_days <= lifetime_sessions,0,0,Pass,No violations found.
+Clean sheet,Non-negative counts,"sessions, active days and XP >= 0",0,0,Pass,No negative values found.
+Clean sheet,Derived registration age,days_since_registration >= 0,4,0,Review,"Four negative values occur on 15 Sep 2026, the dataset end date; confirm day-boundary/timezone/derivation logic."
+Clean sheet,Activity flags,7-day active implies 30-day active,0,0,Pass,No logical contradictions found.
+Clean sheet,Referral detail,Referral detail present iff source is Referral,0,0,Pass,119 referral-source users have Friend/Family; other sources have null detail.
+Clean sheet,Data dictionary coverage,Every dataset field documented,2,0,Review,platform and country are present in the dataset but absent from Data_Dictionary.
+Messy audit,Duplicate user IDs,user_id should be unique,8,16,Fail,"8 excess duplicate rows across 8 duplicated IDs; keep messy sheet for audit, not direct analysis."
+Messy audit,Registration timestamps,Valid timestamp required,2,0,Fail,Two rows have invalid/missing registration_datetime; one malformed value is 2026-14-02 12:00.
+Messy audit,Required field nulls,Required fields should be populated,8,0,Fail,"One null each in age, gender, city, registration_datetime, acquisition_source, primary_device, email_verification_status and onboarding_status."
