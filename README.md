@@ -6,7 +6,7 @@
 
 ## Start here — reviewer navigation
 
-**[Reviewer Access Guide — all 21 deliverables](docs/REVIEWER_ACCESS_GUIDE.md)** · **[Download the public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4.zip)** · [Rendered ER diagram](docs/LOGICAL_DATA_MODEL.md)
+**[Reviewer Access Guide — all 21 deliverables](docs/REVIEWER_ACCESS_GUIDE.md)** · **[Download the public source bundle](https://github.com/stupid-boy-dot/VELOOP-Rewards-Data-Analytics/releases/download/task01-review-v2/VELOOP_Task01_Public_Source_Bundle_Revision4_2.zip)** · [Rendered ER diagram](docs/LOGICAL_DATA_MODEL.md)
 
 
 | Review need | Direct artifact |
@@ -65,7 +65,7 @@
 
 The project covers the assignment's 21 deliverables: executive summary; product data audit; data coverage; user/account, earning/reward, wallet/withdrawal and referral/engagement specifications; event tracking; data dictionary; logical data model; KPI catalogue; simulated profiling; data quality; dashboard blueprint; developer handoff; pipeline; privacy/governance; readiness; assumptions; backlog; and consolidated report.
 
-The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The GitHub release includes a downloadable **public source bundle** of repository Markdown, CSV, HTML, Mermaid and Python evidence; the six public-safe profile CSVs and narrative analytics specifications are also directly accessible on the main branch. This is a source bundle, not the separate formatted PDF/XLSX/PPTX handover archive. Those formatted binary files are not attached to the public release at this time; see the [Reviewer Access Guide](docs/REVIEWER_ACCESS_GUIDE.md) for the exact publication boundary.
+The public repository now includes direct machine-readable KPI, data dictionary, event, dashboard, backlog, assumptions, readiness and gap schedules; six direct profile-sheet CSV exports; the user/account specification, readiness assessment and data-quality audit; the seven-screen wireframe viewer; the detailed proposed developer handoff; reproducible aggregate calculations; and the primary narrative reports. The GitHub release includes a downloadable **public source bundle** of repository Markdown, CSV, HTML, Mermaid and Python evidence; the six public-safe profile CSVs and narrative analytics specifications are also directly accessible on the main branch. This is a source bundle, not the separate formatted PDF/XLSX/PPTX handover archive. Those formatted binary files are not attached to the public release at this time; see the [Reviewer Access Guide](docs/REVIEWER_ACCESS_GUIDE.md) for the exact publication boundary.
 
 ## Data integrity and scope
 
